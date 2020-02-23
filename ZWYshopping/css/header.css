@@ -1,0 +1,248 @@
+.w{
+    width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+}
+a{
+    color: #fff;
+}
+.on1{
+   color:#ed4040 !important;
+}
+.on{
+    color:#666
+}
+.headMain{
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+}
+.headerTop{
+    height: 30px;
+    color: #fff;
+    line-height: 30px;
+    font-size: 14px;
+    position: relative;
+    background-color: #0d2347;
+    position: relative;
+}
+.headerTop .left{
+    float: left;
+}
+.headerTop .left span:nth-child(1){
+    display: inline-block;
+    color:#0d2347;
+    background-color:#fff;
+    text-align: center;
+     width: 54px;
+     margin-right: 10px;
+}
+.headerTop .left span:nth-child(2){
+    color: #666;
+    font-weight: bold;;
+}
+.headerTop .right{
+    float: right;
+}
+.headerTop .right .span i{
+    display: none;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+}
+.headerTop .center{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
+}
+.headerBottom{
+    clear: both;
+    padding: 14px 0 20px;
+    text-align: center;
+    color: black;
+    position: relative;
+}
+.headerBottom img{
+    width: 150px;
+    height: 76px;
+    position: absolute;
+    left: 50%;
+    margin-left: -75px
+}
+.headerBottom .person{
+    width: 100px;
+    height: 140px;
+    position: absolute;
+    left: 6px;
+    top: 32px;
+    font-size: 14px;
+    color: #333;
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-top: 16px;
+    z-index: 222;
+    display: none;
+}
+.headerBottom .person i:nth-child(1){
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    left: 42px;
+    top: -13px;
+    color: #ccc;
+    font-size: 18px;
+    background: #fff;
+    z-index: 11111;
+
+}
+.headerBottom .person p{
+    padding: 0 10px;
+    height: 25px;
+}
+.headerBottom .person p:hover{
+    cursor: pointer;
+    background-color: #6581a3;
+}
+.headerBottom .mycar{
+    position: absolute;
+    right: 420px;
+    top: 43px;
+    background-color: #fff;
+    width: 285px;
+    height: 200px;
+    z-index: 222;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.headerBottom .mycar i{
+    position: absolute;
+    left: 250px;
+    top: -14px;
+    color: #ccc;
+    font-size: 18px;
+    background: #fff;
+}
+.headerBottom .mycar .left{
+    display: inline-block;
+}
+.headerBottom .mycar img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/* ===================头部导航效果的样式================================================ */
+
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+}
+.nav{
+    clear: both;
+    line-height: 40px;
+    width: 100%;
+    color: #333;
+    font-size: 16px;
+    padding-bottom: 12px;
+    text-align: center;
+    position: relative;
+    z-index: 11;
+}
+.nav li>span{
+    padding:0 32px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* =======公共部分样式============= */
+.nav .common-nav{
+    padding-top: 25px;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    background-color: #fff;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid #666;
+    display: none;
+}
+.nav .common-nav div{
+    display: inline-block;
+}
+.commonFL{
+    font-weight: 700 !important;
+    margin-bottom: 5px !important;
+}
+.common_sapn_big{
+    margin-right: 60px;
+    vertical-align: top;
+}
+.common_sapn_big span{
+    display: block;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: left;
+}
+.common_img img{
+    width: 200px;
+    height: 255px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.bottom_right span{
+    font-size: 14px;
+    color: #000;
+}
+.bottom_right>.logo{
+position: relative;
+display: inline-block;
+margin-bottom: 24px;
+}
+.bottom_right>i{
+    font-size: 22px;
+}
+.bottom_right>.bag{
+    display: inline-block;
+    padding-left: 24px;
+}
+.bottom_right i{
+    font-size: 20px;
+    color: black;
+}
+.bottom_right>div span:hover{
+    cursor: pointer;
+    color: blue;
+}
+.bottom_right>.input{
+    width: 250px;
+    height: 32px;
+    position: relative;
+    border-bottom:1px solid #000
+}
+.bottom_right>.input input{
+    width: 205px;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+    color: #ccc;
+    outline: none;
+}
+.bottom_right>.input i{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 24px;
+}

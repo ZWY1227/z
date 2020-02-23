@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GAP个人中心</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1632805_nn85zw6iqrd.css">
+    <link rel="icon" href="https://gap-cn-node.oss-cn-shanghai.aliyuncs.com/casaba_plus_assets/prod-2020.2.3-1/static/gap-144.f33f599c3d52f4169adf21ba71bf5cc8.png">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/MYaccount.css">
+    <script src="../js/jquery-1.11.3.js"></script>
+</head>
+<body>
+    <!-- 头 -->
+    <div id="header"></div>
+    <!-- 我的账户部分start===================================================================== -->
+    <div class="account">
+        <div class="w">
+            <div class="account_left">
+                <div class="title">
+                    <span><i class="iconfont icon-huiyuan"></i></span>
+                    <span>会员中心</span>
+                </div>
+                <!-- 索引导航1 -->
+                <div class="leftTop">
+                    <ul id="ullist">
+                        <li class="common li" onclick="personFun(0)">我的账户</li>
+                        <li class="li" onclick="personFun(1)">个人信息</li>
+                        <li  class="li" onclick="personFun(2)">地址簿</li>
+                        <li  class="li" onclick="personFun(3)">积分</li>
+                        <li class="li"  onclick="personFun(4)">优惠券</li>
+                    </ul>
+                    <div class="title">
+                        <span><i class="iconfont icon-dingdan"></i></span>
+                        <span>订单信息</span>
+                    </div>
+                </div>
+                 <!-- 索引导航2 -->
+                <div class="left_bottom">
+                    <ul id="ullist1">
+                        <li class="li"  onclick="personFun(5)">我的订单</li>
+                        <li class="li"  onclick="personFun(6)">我的退换货</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="divlist">
+                <!-- 我的账户 -->
+                <div class="account-right" style="display:block;">
+                    <div class="title">
+                        我的账户
+                    </div>
+                    <div class="top">
+                        <div class="topleft">
+                            <div class="hello">
+                                <span>
+                                    您好，187****7686
+                                </span>
+                                <span onclick="indexfun()" style="cursor: pointer;">退出登录</span>
+                            </div>
+                            <div class="hello1">
+                                欢迎光临Gap中国官网！
+                            </div>
+                            <div class="hello" style="padding-top: 50px;">
+                                <span>
+                                    尊敬的蓝卡会员
+                                </span>
+                            </div>
+                            <div class="hello1" style="padding-bottom: 35px;">
+                                感谢成为我们的蓝卡会员，您可点击查看<a href="">会员权益</a>
+                            </div>
+                            <div class="HK">
+                                <img src="../img/0XF8EX_]$QR[$2]D6I_B@[S.png" alt="">
+                                <div class="VIP">
+                                    <span>
+                                        蓝卡会员
+                                    </span>
+                                    <span>
+                                        您再消费<span>￥1,200.00 </span>可升级银卡会员
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="topright">
+                            <div class="font" style="display:;">
+                                <img src="https://gap-cn-node.oss-cn-shanghai.aliyuncs.com/casaba_plus_assets/prod-2020.2.14-1/static/gap-vip1@2x.7c5df525945bc32b474ce2fd76497981.png"
+                                    alt="">
+                                <p class="p1">
+                                    187****7686 IS VIP BLUE
+                                </p>
+                                <p class="p2" id="font">
+                                    查看二维码
+                                </p>
+                            </div>
+                            <div class="back" style="display: ;">
+                                <div class="pho">
+                                    187****7686 IS VIP BLUE
+                                </div>
+                                <img src="../img/QQ图片20200218201233.png" alt="">
+                                <div class="call">
+                                    序列号：1120021100004466
+                                </div>
+                                <div class="vi" id="back">
+                                    查看会员卡
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="center">
+                        <ul>
+                            <li>
+                                <span><i class="iconfont icon-laodongzhegerenxinxiqia"></i></span>
+                                <span>
+                                    <p>个人信息</p>
+                                    <p>187****7686</p>
+                                </span>
+                            </li>
+                            <li>
+                                <span><i class="iconfont icon-dizhibu"></i></span>
+                                <span>
+                                    <p>地址簿</p>
+                                    <p>0个</p>
+                                </span>
+                            </li>
+                            <li>
+                                <span><i class="iconfont icon-jifen"></i></span>
+                                <span>
+                                    <p>积分</p>
+                                    <p>0分</p>
+                                </span>
+                            </li>
+                            <li>
+                                <span><i class="iconfont icon-tubiaolunkuo-"></i></span>
+                                <span>
+                                    <p>优惠券</p>
+                                    <p>1张</p>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <div class="title" id="myDD">
+                            <span class="commonBG">
+                                我的订单
+                            </span>
+                            <span class="">
+                                我的退换货
+                            </span>
+                        </div>
+                        <div id="showdiv">
+                            <div class="left" id="left" style="display: none;">
+                                <div class="commons">
+                                    你的账户还没有订单记录
+                                </div>
+                                <div class="shop">
+                                    立即购物
+                                </div>
+                            </div>
+                            <div class="left" id="left1" style="display: block;">
+                                <div class="dity">
+                                    <div class="dityleft">
+                                        <div class="title1">
+                                            <span>订单编号：120021910304590619</span>
+                                            <span>下单时间：2020/02/19 10:30:46</span>
+                                        </div>
+                                        <div class="img">
+                                            <img src="https://uxresources.baozun.com/prod/88000136/20200215/2E89E70EE1834293CC8EA8522CA49D23.jpg?x-oss-process=image/resize,m_pad,w_250,h_325"
+                                                alt="">
+                                            <img src="https://uxresources.baozun.com/prod/88000136/20190729/D80D44CBB14B250608FF29D606DF46DC.jpg?x-oss-process=image/resize,m_pad,w_250,h_325"
+                                                alt="">
+                                            <img src="https://uxresources.baozun.com/prod/88000136/20191230/BDBFF28EDD840683902F7985135D989B.jpg?x-oss-process=image/resize,m_pad,w_250,h_325"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="dityright">
+                                        <div>
+                                            <span>
+                                                共3件商品
+                                            </span>
+                                            <span>订单金额：￥623.50</span>
+                                        </div>
+                                        <div>待支付</div>
+                                        <div>立即支付</div>
+                                        <div>查看订单详情</div>
+                                    </div>
+                                </div>
+                                <div class="more">
+                                    <span>查看全部订单</span>
+                                    <span><i class="iconfont icon-jiantouxiangshang"></i></span>
+                                </div>
+
+                            </div>
+                            <div class="right" id="right">
+                                <div class="commons">
+                                    您的账户还没有退换货记录
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  个人信息-->
+                <div class="account-right1" style="display: none;">
+                    <div class="title">
+                        个人信息
+                    </div>
+                    <div class="top">
+                        <div class="title">
+                            账户信息
+                        </div>
+                        <div class="phone">
+                            <span>手机号</span>
+                            <span>187****7686</span>
+                        </div>
+                        <div id="changePassword" style="cursor: pointer;">
+                            修改密码
+                        </div>
+                    </div>
+                    <div class="personal">
+                        <div class="pertitle">
+                            <span>个人资料</span>
+                            <span>* 完善生日信息可获得积分</span>
+                        </div>
+                        <div class="lable">
+                            <span>用户名</span>
+                            <span>（一旦确认无法修改）</span>
+                        </div>
+                        <div class="input1">
+                            <input type="text" placeholder="请输入您的用户名" id="input4" onblur="fun(4)">
+                            <div class="comred p7" style="display: none;">请输入用户名</div>
+                            <div class="comred p8" style="display: none;">请输入正确的用户名</div>
+                        </div>
+                        <div class="lable">
+                            <span>性别</span>
+                            <span>（一旦确认无法修改）</span>
+                        </div>
+                        <div class="radio">
+                            <span><input type="radio" name="sex" checked>女性</span>
+                            <input type="radio" name="sex">男性
+                        </div>
+                        <div class="lable">
+                            <span>生日</span>
+                            <span>（一旦确认无法修改）</span>
+                        </div>
+                        <div class="radioinput" id="date">
+                            <select name="year" id="year" class="date_select">
+                                <option value="">年</option>
+                            </select>
+                            <select name="month" id="month" class="date_select">
+                                <option value="">月</option>
+                            </select>
+                            <select id="days" class="day" class="date_select">
+                                <option value="">日</option>
+                            </select>
+                        </div>
+                        <script>
+                            $(function(){
+                                $("#date").selectDate()
+                                $("#days").focusout(function(){
+                                    var year = $("#year option:selected").html()
+                                    var month = $("#month option:selected").html()
+                                    var day = $("#days option:selected").html()
+                                    console.log(year+month+day)
+                                })
+                            })
+                        </script>
+                        <div class="lable">
+                            电子邮箱
+                        </div>
+                        <div class="input1">
+                            <input type="text" placeholder="请输入电子邮箱" id="input5" onblur="fun(5)">
+                            <div class="comred p9" style="display: none;">请输入您的电子邮箱</div>
+                            <div class="comred p10" style="display: none;">请输入正确的电子邮箱</div>
+                        </div>
+                        <div class="lable">
+                            <span>宝宝性别</span>
+                            <span>（一旦确认无法修改）</span>
+                        </div>
+                        <div class="radio">
+                            <span><input type="radio" name="sex">女宝宝</span>
+                            <input type="radio" name="sex">男宝宝
+                        </div>
+                        <div class="lable">
+                            <span>宝宝生日</span>
+                            <span>（一旦确认无法修改）</span>
+                        </div>
+                        <div class="radioinput">
+                            <select name="" id="">
+                                <option value="">年</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">月</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">日</option>
+                            </select>
+                        </div>
+                        <div class="tobaby">
+                            <div class="lable">
+                                <span>二宝性别</span>
+                                <span>（一旦确认无法修改）</span>
+                            </div>
+                            <div class="radio">
+                                <span><input type="radio" name="sex">女宝宝</span>
+                                <input type="radio" name="sex">男宝宝
+                            </div>
+                            <div class="lable">
+                                <span>二宝生日</span>
+                                <span>（一旦确认无法修改）</span>
+                            </div>
+                            <div class="radioinput">
+                                <select name="" id="">
+                                    <option value="">年</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">月</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">日</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="add">
+                            <span><i class="iconfont"></i></span>
+                            <span>增加一个宝宝的信息</span>
+                        </div>
+
+                        <div class="button">
+                            <span>重置</span>
+                            <span class="commonsapn">提交</span>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+                <!-- 地址簿 -->
+                <div class="account-right2" style="margin-left: 20px;display:none;">
+                   <div style="display: block;" class="dataa">
+                        <div class="DZB">
+                                <span>地址簿</span>
+                            </div>
+                            <div class="place">
+                                <div class="place_box">
+                                    <div class="f" style="display: flex;">
+                                        <div class="box1">
+                                            <p class="box_p">收件人</p>
+                                            <input class="box_ipnut" id="input1" type="text" placeholder="请输入姓名"
+                                                onblur="fun(1)">
+                                            <div class="comred p1" style="display: none;">请输入姓名</div>
+                                            <div class="comred p2" style="display: none;">请输入正确的姓名</div>
+                                        </div>
+                                        <div class="box2">
+                                            <p class="box_p">手机号</p>
+                                            <input class="box_ipnut " id="input2" type="text" placeholder="请输入手机号"
+                                                onblur="fun(2)">
+                                            <div class="comred p3" style="display: none;">请输入手机号</div>
+                                            <div class="comred p4" style="display: none;">请输入正确的手机号</div>
+                                        </div>
+                                    </div>
+                                    <div class="box3">
+                                        <div class="box_shq">
+                                            <span>省</span>
+                                            <span style="padding-left: 12px;">市</span>
+                                            <span style="padding-left: 14px;">区</span>
+                                        </div>
+                                        <div class="box3_select">
+                                            <select style="margin-left: 0;" name="" class="Province" onclick="ProFun()">
+                                                <option value="">请选择省</option>
+                                            </select>
+                                            <select name="" class="City" onclick="CityFun()">
+                                                <option value="">请选择市</option>
+                                            </select>
+                                            <select name="" class="Area">
+                                                <option value="">请选择县/区</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="box4">
+                                        <p>详细地址</p>
+                                        <textarea placeholder="请输入详细地址" id="input3" onblur="fun(3)"></textarea>
+                                        <div class="comred p5" style="display: none;">请输入详细地址</div>
+                                        <div class="comred p6" style="display: none;">请输入正确的详细地址</div>
+                                    </div>
+                                    <div class="box5">
+                                        <input type="checkbox" checked>
+                                        <span>设为默认地址</span>
+                                        <div id="save">保存并创建</div>
+                                    </div>
+                                </div>
+                            </div>
+                   </div>
+                  <div class="adddata" style="display: none;">
+                    <div class="addtitle">
+                        <span></span>
+                        <span>收件人</span>
+                        <span>地址</span>
+                        <span>手机号</span>
+                        <span>操作</span>
+                    </div>
+                    <div class="data">
+                        <span>
+                            <input type="radio" name="data" checked>
+                            <span>默认地址</span>
+                        </span>
+                        <span>张婉莹</span>
+                        <span>河南省郑州市郑州工业应用技术学院，新校区</span>
+                        <span>18749957686</span>
+                        <span>编辑、删除</span>
+                    </div>
+                    <div class="data data1">
+                            <span>
+                                <input type="radio" name="data">
+                                <span>默认地址</span>
+                            </span>
+                            <span>张婉莹</span>
+                            <span>新疆乌鲁木齐巴拉啦，苜蓿沟区</span>
+                            <span>18749957686</span>
+                            <span>编辑、删除</span>
+                        </div>
+                    <div class="button buttonn">
+                        新增收货地址
+                    </div>
+                  </div>
+
+
+
+                </div>
+                <!-- 积分 -->
+                <div class="account-right3" style="margin-left: 20px;display: none;">
+                    <div class="jf">
+                        <span>积分</span>
+                        <span>查看积分规则</span>
+                    </div>
+                    <div class="jf1">
+                        <div class="r3title">
+                            <span class="titl">
+                                <span>当前可用积分 <span>0</span></span>
+                                <span>本月底即将过期0积分</span>
+                            </span>
+                            <span class="titr" id="show">
+                                <div><span>如何获得积分？</span></div>
+                            </span>
+                        </div>
+                        <p>* 您可重新登录账号，查看最新积分</p>
+                        <div class="r3nav" id="nav">
+                            <span class="commspan">全部记录</span>
+                            <span>获取记录</span>
+                            <span>使用记录</span>
+                        </div>
+                        <div class="navdiv" id="navdiv">
+                            <div class="navdiv1" id="navdiv1">1暂无积分记录1</div>
+                            <div class="navdiv2" id="navdiv2">2暂无积分记录2</div>
+                            <div class="navdiv3" id="navdiv3">3暂无积分记录3</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 优惠券 -->
+                <div class="account-right4" style="margin-left: 20px;display: none;">
+                    <div class="YHQ">
+                        <span>优惠券</span>
+                    </div>
+                    <div class="r4">
+                        <div class="r4nav">
+                            <span class="commontitle" id="show1">
+                                官方优惠券<span>（1张）</span>
+                            </span>
+                            <span id="show2">
+                                门店通用优惠券<span>（0张）</span>
+                            </span>
+                        </div>
+                        <div class="r4navdiv" id="r4navdiv1" style="display: block;">
+                            <div class="divnav">
+                                <span class="span11">
+                                    <span class="commspan" id="new">可使用</span>
+                                    <span id="years">已使用</span>
+                                </span>
+                                <span onclick="preferFun()" id="under">
+                                    优惠券使用规则
+                                </span>
+                            </div>
+                            <div class="divcontain" style="display: block;" id="div1">
+                                <img src="../img/yhq.png.png" alt="">
+                            </div>
+                            <div class="divcontain" style="display: none;" id="div2">
+                                暂无优惠券
+                            </div>
+
+                        </div>
+                        <div class="r4navdiv" id="r4navdiv2" style="display: none;">
+                            <div class="divnav">
+                                <span class="span11">
+                                    <span class="commspan" id="new1">可使用</span>
+                                    <span id="year1">已使用</span>
+                                </span>
+                                <span onclick="preferFun()">
+                                    优惠券使用规则
+                                </span>
+                            </div>
+                            <div class="divcontain" style="display: block;" id="div3">
+                                暂无优惠券
+                            </div>
+                            <div class="divcontain" style="display:none;" id="div4">
+                                暂无优惠券
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <!-- 我的订单 -->
+                <div class="account-right5" style="margin-left: 20px;display: none;">
+                    <div style="display: none;">
+                        <div class="title">
+                            你的账户还没有订单记录
+                        </div>
+                        <div class="shop">
+                            立即购物
+                        </div>
+                    </div>
+                    <div class="order">
+                        <span>我的订单</span>
+                    </div>
+                    <div class="r5contain">
+                        <div class="r5nav" id="r5nav">
+                            <span class="commontitle">全部订单</span>
+                            <span>待支付</span>
+                            <span>代发货</span>
+                            <span>待收货</span>
+                            <span>已完成</span>
+                        </div>
+                        <div class="r5navdiv" id="r5navdiv" style="height:355px">
+                            <div class="navdiv1">
+                                <div class="dity">
+                                    <div class="dityleft">
+                                        <div class="title1">
+                                            <span>订单编号：120021910304590619</span>
+                                            <span>下单时间：2020/02/19 10:30:46</span>
+                                        </div>
+                                        <div class="img">
+                                            <img src="https://uxresources.baozun.com/prod/88000136/20200215/2E89E70EE1834293CC8EA8522CA49D23.jpg?x-oss-process=image/resize,m_pad,w_250,h_325"
+                                                alt="">
+                                            <img src="https://uxresources.baozun.com/prod/88000136/20190729/D80D44CBB14B250608FF29D606DF46DC.jpg?x-oss-process=image/resize,m_pad,w_250,h_325"
+                                                alt="">
+                                            <img src="https://uxresources.baozun.com/prod/88000136/20191230/BDBFF28EDD840683902F7985135D989B.jpg?x-oss-process=image/resize,m_pad,w_250,h_325"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="dityright">
+                                        <div>
+                                            <span>
+                                                共3件商品
+                                            </span>
+                                            <span>订单金额：￥623.50</span>
+                                        </div>
+                                        <div id="cancel">已取消</div>
+
+                                        <div>查看订单详情</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navdiv2" style="display: none;height: 355px;">
+                                暂无订单信息
+                            </div>
+                            <div class="navdiv3" style="display: none;height:355px">
+                                暂无订单信息
+                            </div>
+                            <div class="navdiv4" style="display: none;height:355px">
+                                暂无订单信息
+                            </div>
+                            <div class="navdiv5" style="display: none;height:355px">
+                                暂无订单信息
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- 退换货 -->
+                <div class="account-right6" style="margin-left: 20px;display: none;">
+                    <div class="title">
+                        我的退换货
+                    </div>
+                    <div class="DD" id="DD">
+                        <span class="commonBG">退货订单</span>
+                        <span>换货订单</span>
+                    </div>
+                    <div class="DDdiv" id="DDdiv">
+                        <div class="left" id="THdd" style="display: block;">
+                            <div class="usebox">
+                                <span class="commspan" id="now">处理中</span>
+                                <span id="yeared">已完成</span>
+                            </div>
+                            <div class="usediv1 usediv">
+                                您的账户还没有记录1
+                            </div>
+                            <div class="usediv2 usediv" style="display: none;">
+                                您的账户还没有记录2
+                            </div>
+                        </div>
+                        <div class="right" id="HHdd" style="display: none;">
+                            <div class="usebox">
+                                <span class="commspan" id="now1">处理中</span>
+                                <span id="yeared1">已完成</span>
+                            </div>
+                            <div class="usediv3 usediv">
+                                您的账户还没有记录3
+                            </div>
+                            <div class="usediv4 usediv" style="display: none;">
+                                您的账户还没有记录4
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 脚 -->
+    <div id="footer"></div>
+    <!-- =================弹出的遮罩层=======如何获得积分============================= -->
+    <div class="layerbg" id="layerbg">
+        <div class="layer" id="layer">
+            <div class="titlebg">
+                如何获得积分？
+            </div>
+            <div class="bgimg">
+                <img src="https://gap-cn-node.oss-cn-shanghai.aliyuncs.com/casaba_plus_assets/prod-2020.2.14-1/static/top-pc.154c3a27ece06e9c9772411568db1f50.png"
+                    alt="">
+                <img src="https://gap-cn-node.oss-cn-shanghai.aliyuncs.com/casaba_plus_assets/prod-2020.2.14-1/static/left-pc.bdf159d86b6a3d66d9fe190a85e686da.png"
+                    alt="">
+            </div>
+            <span id="hide">
+                <i class="iconfont icon-cha"></i>
+            </span>
+        </div>
+        <div class="layer1" id="layer1">
+            <div class="laytitle">
+                修改密码
+            </div>
+            <ul>
+                <li><p>旧密码</p>
+                <input type="text" placeholder="请输入旧密码">
+                </li>
+                <li><p>新密码</p>
+                <input type="text" placeholder="请输入新密码">
+                </li>
+                <li><p>确认新密码</p>
+                <input type="text" placeholder="请确认新密码">
+                </li>
+            </ul>
+            <div class="submit">
+                提交
+            </div>
+            <span id="hide1">
+                    <i class="iconfont icon-cha"></i>
+            </span>
+       
+        </div>
+        <div class="layer2"id="layer">
+                <span class="qX" id="qX"><i class="iconfont icon-cha"></i></span>
+                    <div class="place">
+                            <h4>新增收货地址</h4>
+                            <div class="place_box">
+                                <div style="display: flex;">
+                                        <div class="box1">
+                                                <p class="box_p">收件人</p>
+                                                <input class="box_ipnut" id="input1" type="text" placeholder="请输入姓名" onblur="fun(1)">
+                                                <p class="pred p1">请输入姓名</p>
+                                                <p class="pred p2">请输入正确的姓名</p>
+                                                
+                                            </div>
+                                            <div class="box2">
+                                                <p class="box_p">手机号</p>
+                                                <input class="box_ipnut" id="input2" type="text" placeholder="请输入手机号" onblur="fun(2)">
+                                                <p class="pred p3">请输入手机号</p>
+                                                <p class="pred p4" >请输入正确的手机号</p>
+                                            </div>
+                                </div>
+                                <div class="box3">
+                                    <div class="box_shq">
+                                        <span>省</span>
+                                        <span style="padding-left: 12px;">市</span>
+                                        <span style="padding-left: 14px;">区</span>
+                                    </div>
+                                    <div class="box3_select">
+                                        <select style="margin-left: 0;" name="" class="Province" onchange="ProFun()">
+                                            <option value="">请选择省</option>
+                                        </select>
+                                        <select name="" class="City"  onchange="CityFun()">
+                                            <option value="">请选择市</option>
+                                        </select>
+                                        <select name="" class="Area"  onchange="AreaFun()">
+                                            <option value="">请选择县/区</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="box4">
+                                    <p>详细地址</p>
+                                    <textarea placeholder="请输入详细地址" id="input3" onblur="fun(3)"></textarea>
+                                    <p class="pred p5">请输入详细地址</p>
+                                    <p class="pred p6">请输入正确的详细地址</p>
+                                </div>
+                                <div class="box51">
+                                    <input type="checkbox"checked>
+                                    <span>设为默认地址</span>
+                                    <div>
+                                        <span id="qushow">取消</span>
+                                        <span class="commonsapn">保存</span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../js/country.js"></script>
+<script src="../js/mycenter.js"></script>
+<script>
+    $(".add").click(function(){
+        $(".tobaby").show()
+        $(this).hide()
+    })
+    $("#save").click(function(){
+        $(".dataa").hide().siblings().hide()
+        $(".adddata").show().siblings().hide()
+    })
+    $(".buttonn").click(function(){
+        $(".layerbg").show()
+        $(".layer2").show()
+    })
+    $("#qushow").click(function(){
+        $(".layerbg").hide()
+        $(".layer2").hide()
+    })
+    $("#qX").click(function(){
+        $(".layerbg").hide()
+        $(".layer2").hide()
+    })
+       // --------------------------循环添加省--------------------------------
+       console.log(country)
+      let cit = ""
+        for (let i = 0; i < country.length; i++) {
+            cit += `<option value="">` + country[i].name + `</option>`
+        }
+        $(".Province").append(cit)
+        // -------------------循环添加所在省对应的市------------记得添加前移除前一个---------------------------
+        function ProFun() {
+            let index=$("#Province").children('option:selected').index()-1
+           let length=country[index].city.length
+           $(".City").children().not(':eq(0)').remove()
+           let shi=""
+           for(let i=0;i<length;i++){
+            shi+= `<option value="">` + country[index].city[i].name + `</option>`
+           }
+           $(".City").append(shi)
+        }
+        // ------------------循环添加所在省所在市所对应的区------------记得添加前删除前一个----------------------
+        function CityFun() {
+            let index1=$("#Province").children('option:selected').index()-1
+            let index2=$("#City").children('option:selected').index()-1
+            let length=country[index1].city[index2].area.length
+            $(".Area").children().not(':eq(0)').remove()
+            let qu=""
+            for(let i=0;i<length;i++){
+                qu+=`<option value="">` + country[index1].city[index2].area[i] +`</option>`
+            }
+            $(".Area").append(qu)
+        }
+    $("#header").load("../common/personheader.html")
+    $("#footer").load("../common/footer.html")
+    function preferFun(){
+        window.location.href="./prefer.html"
+    }
+    function indexfun(){
+        window.location.href="./index.html"
+    }
+    $("#changePassword").click(function(){
+        $(".layerbg").show()
+        $(".layer1").show()
+    })
+    $("#hide1").click(function () {
+        $(".layerbg").hide()
+        $(".layer1").hide()
+    })
+    $("#show").click(function () {
+        $(".layerbg").show()
+        $(".layer").show()
+    })
+    $("#hide").click(function () {
+        $(".layerbg").hide()
+        $(".layer").hide()
+    })
+    $("#r5nav").children().click(function () {
+        let index = $(this).index()
+        console.log(index)
+        $(this).addClass("commontitle").siblings().removeClass("commontitle")
+        $("#r5navdiv").children().eq(index).show().siblings().hide()
+    })
+    // ===============正反盒子旋转===================================
+    let flag = true
+    $("#font").click(function () {
+        if (flag) {
+            $(".topright").addClass("comrotate")
+            flag = false
+        } else {
+            $(".topright").removeClass("comrotate")
+            flag = true
+        }
+    })
+    $("#back").click(function () {
+        if (flag) {
+            $(".topright").addClass("comrotate")
+            flag = false
+        } else {
+            $(".topright").removeClass("comrotate")
+            flag = true
+        }
+
+    })
+    $("#show1").click(function () {
+        $(this).addClass("commontitle").siblings().removeClass("commontitle")
+        $("#r4navdiv1").toggle()
+        $("#r4navdiv2").toggle()
+    })
+
+    $("#show2").click(function () {
+        $(this).addClass("commontitle").siblings().removeClass("commontitle")
+        $("#r4navdiv1").toggle()
+        $("#r4navdiv2").toggle()
+    })
+    $("#new").click(function () {
+        $(this).addClass("commspan").siblings().removeClass("commspan")
+        $("#div1").toggle()
+        $("#div2").toggle()
+    })
+    $("#years").click(function () {
+        $(this).addClass("commspan").siblings().removeClass("commspan")
+        $("#div2").toggle()
+        $("#div1").toggle()
+    })
+    $("#new1").click(function () {
+        $(this).addClass("commspan").siblings().removeClass("commspan")
+        $("#div3").toggle()
+        $("#div4").toggle()
+    })
+    $("#year1").click(function () {
+        $(this).addClass("commspan").siblings().removeClass("commspan")
+        $("#div3").toggle()
+        $("#div4").toggle()
+    })
+    $("#now").click(function () {
+        $(this).addClass("commspan").siblings().removeClass("commspan")
+        $(".usediv1").toggle()
+        $(".usediv2").toggle()
+    })
+    $("#yeared").click(function () {
+        $(this).addClass("commspan").siblings().removeClass("commspan")
+        $(".usediv1").toggle()
+        $(".usediv2").toggle()
+    })
+    $("#now1").click(function () {
+        $(this).addClass("commspan").siblings().removeClass("commspan")
+        $(".usediv3").toggle()
+        $(".usediv4").toggle()
+    })
+    $("#yeared1").click(function () {
+        $(this).addClass("commspan").siblings().removeClass("commspan")
+        $(".usediv3").toggle()
+        $(".usediv4").toggle()
+    })
+    $("#nav").children().click(function () {
+        $(this).addClass("commspan").siblings().removeClass("commspan")
+        let index = $(this).index()
+        $("#navdiv").children().eq(index).show().siblings().hide()
+        console.log(index)
+    })
+    $("#myDD").children().click(function () {
+        console.log($(this))
+        $(this).addClass("commonBG").siblings().removeClass("commonBG")
+        $("#left1").toggle()
+        $("#right").toggle()
+    })
+
+
+
+// ====================================================================================
+
+    // $("#ullist").children().click(function () {
+    //     $(this).addClass("common").siblings().removeClass("common")
+    //     $("#ullist1").children().removeClass("common")
+    //     let idex = $(this).index()
+    //     $("#divlist").children().eq(idex).show().siblings().hide()
+    // })
+    // $("#ullist1").children().click(function () {
+    //     $(this).addClass("common").siblings().removeClass("common")
+    //     $("#ullist").children().removeClass("common")
+    //     let idex = $(this).index()
+    //     $("#divlist").children().eq(idex + 5).show().siblings().hide()
+    // })
+    function personFun(value){
+        $("#divlist").children().eq(value).show().siblings().hide()
+        $(".li").removeClass("common")
+        $(".li").eq(value).addClass("common")
+    }
+
+    // ---------------------------------------
+    let href=location.href;
+    console.log(href)
+    let type=href.split("type=")[1]
+    console.log(type)
+    if(type){
+        personFun(type)
+    }
+   
+ 
+
+
+
+
+
+    $("#DD").children().click(function () {
+        $(this).addClass("commonBG").siblings().removeClass("commonBG")
+        $("#DDdiv").children().eq(0).toggle()
+        $("#DDdiv").children().eq(1).toggle()
+    })
+
+
+
+    function fun(value) {
+        if (value == 1) {
+            let val = $("#input1").val()
+            if (val === '') {
+                $("#input1").addClass("comborder")
+                $(".p1").show()
+                $(".p2").hide()
+            }
+            else if (!(val == "张婉莹" || val == "智慧敏" || val == "李赛男")) {
+                $("#input1").addClass("comborder")
+                $(".p2").show()
+                $(".p1").hide()
+            }
+            else {
+                $("#input1").removeClass("comborder")
+                $(".p2").hide()
+                $(".p1").hide()
+            }
+
+        } else if (value == 2) {
+            let val = $("#input2").val()
+            if (val === '') {
+                $("#input2").addClass("comborder")
+                $(".p3").show()
+                $(".p4").hide()
+            }
+            else if (!(/^1[34578]\d{9}$/.test(val)) && val !== '') {
+                $("#input2").addClass("comborder")
+                $(".p4").show()
+                $(".p3").hide()
+            }
+            else {
+                $("#input2").removeClass("comborder")
+                $(".p3").hide()
+                $(".p4").hide()
+            }
+        }
+        else if (value == 3) {
+            let val = $("#input3").val()
+            if (val === '') {
+                $("#input3").addClass("comborder")
+                $(".p5").show()
+                $(".p6").hide()
+            }
+            else if (/\d/.test(val) && val !== '') {
+                $("#input3").addClass("comborder")
+                $(".p6").show()
+                $(".p5").hide()
+            }
+            else {
+                $("#input3").removeClass("comborder")
+                $(".p5").hide()
+                $(".p6").hide()
+            }
+
+
+        }
+        else if (value == 4) {
+            let val = $("#input4").val()
+            if (val === '') {
+                $("#input4").addClass("comborder")
+                $(".p7").show()
+                $(".p8").hide()
+            }
+            else if (!(val == "张婉莹" || val == "智慧敏" || val == "李赛男")) {
+                $("#input1").addClass("comborder")
+                $(".p8").show()
+                $(".p7").hide()
+            }
+            else {
+                $("#input1").removeClass("comborder")
+                $(".p7").hide()
+                $(".p8").hide()
+            }
+
+
+
+        }
+        else if (value == 5) {
+            let val = $("#input5").val()
+            if (val === '') {
+                $("#input1").addClass("comborder")
+                $(".p9").show()
+                $(".p10").hide()
+            }
+            else if (!(/^1[34578]\d{9}$/.test(val)) && val !== '') {
+                $("#input5").addClass("comborder")
+                $(".p10").show()
+                $(".p9").hide()
+            }
+            else {
+                $("#input1").removeClass("comborder")
+                $(".p9").hide()
+                $(".p10").hide()
+            }
+        }
+    }
+
+</script>

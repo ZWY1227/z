@@ -1,0 +1,501 @@
+.wraper{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/* 标题 我的购物袋 start */
+.title{
+    font-size: 24px;
+    height: 27px;
+    line-height: 27px;
+}
+.title>.many{
+    font-size: 16px;
+    margin-left: 16px;
+}
+/* 标题 我的购物袋 end */
+
+/* --------------左边部分  开始------------------ */
+.myShoping{
+    width: 843px;
+    margin-top: 30px;
+    float: left;
+}
+/* 商品属性 数量 价格 start */
+.myShoping>.mySh1{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.myShoping>.mySh1>.input1{
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+.myShoping>.mySh1>span{
+    display: inline-block;
+    margin-left: 260px;
+}
+.myShoping>.mySh1>.all1{
+    margin-left: 10px;
+}
+.myShoping>.mySh1>.all2{
+    margin-left: 120px;
+}
+/* 商品属性 数量 价格 end */
+
+.myShoping>.mySh2{
+    padding: 0 14px;
+    background-color: rgb(245,245,245);
+    height: 51px;
+    line-height: 51px;
+    border-top: 1px solid #666;
+}  
+.myShoping>.mySh2>img{
+    width: 26px;
+    height: 20px;
+}
+
+/* 两件商品的样式 start */
+.trueShop1{
+    display: flex;
+    margin: 0 12px 0 24px;
+    padding: 20px 0;
+}
+.trueShop1>input{
+    width: 16px;
+    height: 16px;
+    float: left;
+    cursor: pointer;
+}
+.trueShop1>img{
+    width: 129px;
+    height: 173px;
+    margin-left: 15px;
+}
+.trueShop1>ul{
+    height: 175px;
+    margin-left: 15px;
+    font-size: 14px;
+    margin-right: 40px;
+    width: 230px;
+}
+.trueShop1>ul>li{
+    height: 14px;
+    line-height: 14px;
+}
+.trueShop1>ul>li:nth-child(1){
+    margin-bottom: 6px;
+}
+.trueShop1>ul>li:nth-child(2){
+    line-height: 22px;
+    width: 270px;
+}
+.trueShop1>ul>li:nth-child(3){
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.trueShop1>ul>li:nth-child(4){
+    margin-bottom: 20px;
+}
+.trueShop1>ul>li:nth-child(5){
+    margin-bottom: 15px;
+}
+.yuanjia{
+    text-decoration: line-through;
+    font-size: 12px;
+    color: #666;
+    margin-left: 10px;
+}
+
+.number{
+    margin-left: 50px;
+}
+.number>.threeSp{
+    padding-bottom: 40px;
+    padding-top: 10px; 
+    display: flex;
+}
+.number>.threeSp>span{
+    cursor: pointer;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid rgb(217, 217, 217);
+}
+.number>.threeSp>span:nth-child(2){
+    width: 42px;
+    border-left: 0;
+    border-right: 0;
+}
+.total{
+    margin-left: 150px;
+    display: flex;
+}
+.remove{
+    margin-left: 30px;
+    cursor: pointer;
+}
+.change{
+    cursor: pointer;
+}
+/* ===============================尺码盒子显示隐藏====================================== */
+.trueShop1 .changeF{
+    position: relative;
+}
+.trueShop1 .changeF .commonbbgg{
+    border:1px solid #122147 !important;
+    color:#122147 !important;
+}
+.trueShop1 .changeF .changeC{
+    position: absolute;
+    width: 624px;
+    height: 210px;
+    background-color: #fff;
+    top: -25px;
+    left: 0px;
+    padding:16px 16px 16px 16px;
+    border: 1px solid #666;
+    border-radius: 8px;
+    display: none;
+}
+.trueShop1 .changeF .changeC .color {
+    padding-bottom: 5px;
+}
+.trueShop1 .changeF .changeC .color span:nth-child(1){
+    font-size: 14px;
+    color: #999;
+}
+.trueShop1 .changeF .changeC .color span:nth-child(2){
+    font-size: 14px;
+    color: #333;
+}
+.trueShop1 .changeF .changeC .img img{
+    width: 20px;
+    height: 20px;
+    border: 1px solid blue;
+    padding:2px;
+    margin:10px 0 20px 0; 
+}
+.trueShop1 .changeF .changeC .size{
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+.trueShop1 .changeF .changeC .size span:nth-child(1){
+    font-size: 14px;
+    color: #999;
+}
+.trueShop1 .changeF .changeC .size span:nth-child(2){
+    font-size: 14px;
+    color: #333;
+}
+.trueShop1 .changeF .changeC ul{
+    width: 100%;
+    margin: 12px 0 35px 0;
+    height: 32px;
+    line-height: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.trueShop1 .changeF .changeC ul li{
+    width: 180px;
+    border: 1px solid #ccc;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #ccc;
+}
+.trueShop1 .changeF .changeC .button{
+    width: 100%;
+    margin: 12px 0 24px 0;
+    height: 32px;
+    line-height: 32px;
+}
+.trueShop1 .changeF .changeC .button span{
+    display: inline-block;
+    width: 180px;
+    border: 1px solid #666;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #666;
+}
+.trueShop1 .changeF .changeC .button span:nth-child(1){
+    margin-right: 44px;
+}
+.trueShop1 .changeF .changeC .button span:nth-child(2){
+    background-color: #122147 !important;
+    color:#fff !important;
+}
+.trueShop1 .changeF .changeC i{
+    position: absolute;
+    left: 40px;
+    top: -11px;
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 第二件 */
+.number1{
+    margin-left: 50px;
+}
+.number1>.threeSp1{
+    padding-bottom: 40px;
+    padding-top: 10px;
+    display: flex;
+}
+.number1>.threeSp1>span{
+    cursor: pointer;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid rgb(217, 217, 217);
+}
+.number1>.threeSp1>span:nth-child(2){
+    width: 42px;
+    border-left: 0;
+    border-right: 0;
+}
+#KCJZ{
+    margin-top: -30px;
+    color: #ed4040;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+
+
+/* =====================================================右边部分start================================================= */
+.rightBox{
+    width: 302px;
+    background-color: rgb(245,245,245);
+    float: right;
+    padding: 16px;
+    margin-top: 30px;
+}
+.rightBox>.rb1{
+    font-size: 18px;
+    height: 21px;
+    line-height: 21px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+}
+.rightBox>.rb1>span{
+    float: right;
+    font-size: 12px;
+    height: 14px;
+    line-height: 22px;
+}
+.rightBox>.rb2{
+    font-size: 14px;
+    height: 16px;
+    line-height: 16px;
+    margin-bottom: 16px;
+    margin-top: 15px;
+}
+.rightBox>.rb2>span{
+   float: right;
+}
+.rightBox>.rb3{
+    font-size: 14px;
+    height: 16px;
+    line-height: 16px;
+    margin-bottom: 16px;
+}
+.rightBox>.rb3>span{
+   float: right;
+}
+.rightBox>.rb4{
+    padding-bottom: 35px;
+    border-bottom: 1px solid #ccc;
+}
+.rightBox>.rb4>input{
+    width: 216px;
+    height: 28px;
+    padding: 0 12px;
+    outline-style: none;
+    border: 1px solid #ccc;
+}
+.rightBox>.rb4>input::-webkit-input-placeholder{
+    color: #ccc;
+}
+.rightBox>.rb4>span{
+    width: 50px;
+    height: 29px;
+    line-height: 25px;
+    text-align: center;
+    color: #ccc;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+.rightBox>.rb5{
+    font-size: 14px;
+    height: 21px;
+    margin: 20px 0 25px;
+
+}
+.rightBox>.rb5>span{
+    float: right;
+    font-size: 18px;
+}
+.rightBox>.rb6>button{
+    width: 308px;
+    height: 38px;
+    padding:0 24px;
+    border: 0;
+    border-radius: 2px;
+    background-color: rgb(217,217,217);
+    color: #fff;
+}
+.rightBox>.rb7{
+    margin-top: 20px;
+}
+.rightBox>.rb7>button{
+    width: 306px;
+    height: 36px;
+    padding:0 24px;
+    border: 0;
+    border-radius: 2px;
+    border: 1px solid black;
+    background-color:#fff;
+    color: rgb(18,33,71);
+}
+.last{
+    float: right;
+    background-color: #fff;
+    margin-top: 34px;
+    margin-right: -15px;
+    width: 298px;
+    padding: 21px 16px 24px;
+    margin-bottom: -15px;
+    border: 1px solid #ccc;
+}
+.last>.last1{
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 15px;
+}
+.last>.last1:nth-child(1){
+    margin-top: 0;
+}
+.last>.last1>.aaa>span{
+    float: right;
+}
+.last>.last1>.aaa>span:nth-child(2){
+    display: none;
+}
+.aaa>span{
+    cursor: pointer;
+}
+.last>.last1>.show1{
+    font-size: 14px;
+    display: none;
+}
+.last>.last1>.show1>p>i{
+    margin-left: 10px;
+}
+.last>.last1>.show1>p>span:nth-child(3){
+    color: #666;
+}
+.last>.last1>.show1>p:nth-child(1){
+    margin: 20px 0;
+}
+.last>.last1>.show1>p:nth-child(2){
+    margin: 20px 0 10px 30px;
+}
+.last>.last1>.show1>p:nth-child(3){
+    margin: 0 0 0 30px;
+}
+.fwTime{
+    color: #666;
+}
+.show2{
+    margin: 20px 0 0 0;
+    padding-bottom: 20px;
+    display: none;
+}
+.show2>span{
+    margin-left: 40px;
+    float: left;
+}
+.show2 i{
+    font-size: 20px;
+}
+.show2>span:nth-child(1){
+    margin-left: 0;
+}
+.show2>span:nth-child(1) i{
+    color: rgb(30,149,212);
+}
+.show2>span:nth-child(2) i{
+    color: rgb(0,183,0);
+}
+.show2>span:nth-child(3) i{
+    color: rgb(18,33,71);
+}
+.show3{
+    margin-top: 14px;
+    display: none;
+}
+.show3>p{
+    font-size: 14px;
+    color: #666;
+}
+/* ==========moreJG==================== */
+.fixedJG{
+    padding: 6px;
+    width: 124px;
+    position: fixed;
+    top: 227px;
+    left: 66px;
+    font-size: 12px;
+    border-radius: 5px;
+    color: #fff;
+    background: rgb(0,0,0,0.6);
+    text-align: center;
+    display: none;
+}
+.fixedJG div:nth-child(1){
+    margin-bottom: 5px;
+}
+.fixedJG div:nth-child(1) i{
+    color: #ed4040;
+}
+/* ============右边需要动态添加的样式=================== */
+.commonYH{
+ color: #be200a !important;
+}
+.commonSY{
+ color: #122147 !important;
+ border:1px solid #122147 !important;
+}
+.commonJS{
+  background-color: #122147 !important;
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 18px !important;
+}

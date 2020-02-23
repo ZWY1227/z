@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GAP商品分类页面</title>
+    <link rel="icon" href="https://gap-cn-node.oss-cn-shanghai.aliyuncs.com/casaba_plus_assets/prod-2020.2.3-1/static/gap-144.f33f599c3d52f4169adf21ba71bf5cc8.png">
+    <link rel="stylesheet" href="../plugin/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/man.css">
+    <!-- 插件用的css文件 -->
+    <link rel="stylesheet" href="../css/jslider.css">
+    <link rel="stylesheet" href="../css/jslider.plastic.css">
+    <!-- jq文件 -->
+    <script src="../js/jquery-1.11.3.js"></script>
+    <!-- 插件用的js文件 -->
+    <script src="../plugin/swiper.min.js"></script>
+    <script src="../plugin/jquery1.js"></script>
+    <script src="../plugin/jquery.dependClass.js"></script>
+    <script src="../plugin/jquery.slider-min.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    
+    <!-- =================分类男装start============================ -->
+    <div class="classify">
+        <div class="w">
+            <div class="banner">
+                <img src="https://uxresources.baozun.com/prod/88000136/20200205/D115F0F3093C4327249B55DD2FCEABFE.jpg"
+                    alt="" onclick="sectionFun()">
+            </div>
+            <div class="classsify_main">
+                <div class="sify_main_top">
+                    <span class="top_span">
+                        <span>男装</span>
+                        <span>[共<span>1000</span>件商品]</span>
+                    </span>
+                </div>
+                <div class="sify_main_con">
+                    <div class="sifymaincon_l">
+                        <div class="sifymain_l_top">
+                            <span class="span1">男装</span>
+                            <span id="JJJJ">
+                                <span id="DD" style="display: none;">＋</span>
+                                <span id="XX" class="" style="display: inline;">—</span>
+                            </span>
+
+                        </div>
+                        <ul class="sifymain_l_top_ul" id="JJDIV" style="display: block;">
+                            <li>徽标logo系列</li>
+                            <li>卫衣</li>
+                            <li>针织衫/毛衣</li>
+                            <li>外套</li>
+                            <li>1969牛仔裤</li>
+                            <li>徽标logo系列</li>
+                            <li>徽标logo系列</li>
+                            <li>卫衣</li>
+                            <li>针织衫/毛衣</li>
+                            <li>外套</li>
+                            <li>1969牛仔裤</li>
+                        </ul>
+                        <div class="sifymain_l_top sifymain_l_top2">
+                            <span class="span1">价格筛选</span>
+                            <span id="JJJJ1">
+                                <span id="DD1" style="display: none;">＋</span>
+                                <span id="XX1" style="display: inline;">—</span>
+                            </span>
+                        </div>
+                        <div id="JJDIV1" style="display:block">
+                            <!-- ==========================================使用插件开始========================================= -->
+                            <div class="price_slider">
+                                <div class="layout">
+                                    <div class="layout-slider" style="width: 100%;">
+                                        <span style="display: inline-block; width: 180px;margin-top:10px">
+                                            <input class="Slider1" type="slider" name="price" value="60;750" />
+                                        </span>
+                                    </div>
+                                   
+                                </div>
+                               
+                                <div class="JG">
+                                    <span class="min_JG">
+                                        <input id="min_id" type="text" value="60">
+                                        <span class="span1">¥</span>
+                                    </span>
+                                    <span>-</span>
+                                    <span class="max_JG">
+                                        <input id="max_id" type="text" value="750">
+                                        <span class="span2">¥</span>
+                                    </span>
+                                </div>
+                                <script type="text/javascript" charset="utf-8">
+                                    jQuery(".Slider1").slider(
+                                        {
+                                            from: 60, to: 750,
+                                            step: 1, smooth: true,
+                                            round: 0, dimension: "&nbsp;",
+                                            skin: "plastic"
+                                        });
+                                        console.log( $(".jslider-pointer"))
+                                    $(".jslider-pointer").click(function () {
+                                        let max=$(".jslider-value")[1].innerText
+                                        let min=$(".jslider-value")[0].innerText
+                                        $("#min_id").val(min) 
+                                        $("#max_id").val(max) 
+                                        console.log( $("#min_id"))
+                                        console.log( $("#max_id"))
+                                        console.log(max)
+                                        console.log(min)
+                                    })
+                                </script>
+                            </div>
+                            <!-- ===================================使用插件结束============================================================ -->
+                        </div>
+                    </div>
+                    <div class="sifymaincon_r">
+                        <div class="sifymaincon_r_top">
+                            <div class="top_left">
+                                <span><input type="checkbox">新品</span>
+                                <span><input type="checkbox">减价</span>
+                                <span><input type="checkbox">超值购</span>
+                            </div>
+                            <div class="top_right">
+                                <span id="PX">排序</span>
+                                <span id="pxx" style="display: inline;">∨</span>
+                                <span id="pxs" style="display: none;">∧</span>
+                                <ul id="PXDIV" style="display: none;">
+                                    <li>默认</li>
+                                    <li>新品</li>
+                                    <li>销量从高到低</li>
+                                    <li>价格从高到低</li>
+                                    <li>价格从低到高</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="sifylist">
+                            <li>
+                                <img onclick="sectionFun()" src="https://uxresources.baozun.com/prod/88000136/20190925/CECE8E830B217C8EF45BD70B0EF1A799.jpg?x-oss-process=image/resize,m_pad,w_250,h_325"
+                                    title="男装|圆领长袖套头卫衣">
+                                <div class="list_pro">
+                                    男装|圆领长袖套头卫衣
+                                </div>
+                                <div class="list_price">
+                                    <span>￥999</span>
+                                    <span>￥888</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img  onclick="sectionFun()" src="https://uxresources.baozun.com/prod/88000136/20191114/2D14C0985EDB4D3568062A24DCC9B841.jpg?x-oss-process=image/resize,m_pad,w_250,h_325"
+                                    title="男装|圆领长袖套头卫衣">
+                                <div class="list_pro">
+                                    男装|圆领长袖套头卫衣
+                                </div>
+                                <div class="list_price">
+                                    <span>￥999</span>
+                                    <span>￥888</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img  onclick="sectionFun()" src="https://uxresources.baozun.com/prod/88000136/20191202/C9F4F98731D8D5833C0C963218EDFBB5.jpg?x-oss-process=image/resize,m_pad,w_250,h_325"
+                                    title="男装|圆领长袖套头卫衣">
+                                <div class="list_pro">
+                                    男装|圆领长袖套头卫衣
+                                </div>
+                                <div class="list_price">
+                                    <span>￥999</span>
+                                    <span>￥888</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img  onclick="sectionFun()" src="https://uxresources.baozun.com/prod/88000136/20200120/EBB13135A4040BFDC1D0B974619ED2CA.jpg?x-oss-process=image/resize,m_pad,w_250,h_325"
+                                    title="男装|圆领长袖套头卫衣">
+                                <div class="list_pro">
+                                    男装|圆领长袖套头卫衣
+                                </div>
+                                <div class="list_price">
+                                    <span>￥999</span>
+                                    <span>￥888</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img  onclick="sectionFun()" src="https://uxresources.baozun.com/prod/88000136/20191204/2F584FC6C146416E8E790DA340064DC2.jpg?x-oss-process=image/resize,m_pad,w_250,h_325"
+                                    title="男装|圆领长袖套头卫衣">
+                                <div class="list_pro">
+                                    男装|圆领长袖套头卫衣
+                                </div>
+                                <div class="list_price">
+                                    <span>￥999</span>
+                                    <span>￥888</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img onclick="sectionFun()"  src="https://uxresources.baozun.com/prod/88000136/20191111/A29C47453156B16D5E482034BE0B593C.jpg?x-oss-process=image/resize,m_pad,w_250,h_325"
+                                    title="男装|圆领长袖套头卫衣">
+                                <div class="list_pro">
+                                    男装|圆领长袖套头卫衣
+                                </div>
+                                <div class="list_price">
+                                    <span>￥999</span>
+                                    <span>￥888</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img  onclick="sectionFun()" src="https://uxresources.baozun.com/prod/88000136/20191114/31C8CF70CF3EDACE4E1134B15ABD6E6C.jpg?x-oss-process=image/resize,m_pad,w_250,h_325"
+                                    title="男装|圆领长袖套头卫衣">
+                                <div class="list_pro">
+                                    男装|圆领长袖套头卫衣
+                                </div>
+                                <div class="list_price">
+                                    <span>￥999</span>
+                                    <span>￥888</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img  onclick="sectionFun()" src="https://uxresources.baozun.com/prod/88000136/20190925/CECE8E830B217C8EF45BD70B0EF1A799.jpg?x-oss-process=image/resize,m_pad,w_250,h_325"
+                                    title="男装|圆领长袖套头卫衣">
+                                <div class="list_pro">
+                                    男装|圆领长袖套头卫衣
+                                </div>
+                                <div class="list_price">
+                                    <span>￥999</span>
+                                    <span>￥888</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <img data-v-2c3a84f2="" src="https://uxresources.baozun.com/prod/88000136/20191114/2D14C0985EDB4D3568062A24DCC9B841.jpg?x-oss-process=image/resize,m_pad,w_250,h_325" title="男装|休闲抓绒连帽衫" alt="男装|休闲抓绒连帽衫"> -->
+    <!-- =================分类男装end============================ -->
+    <div id="footer"></div>
+</body>
+</html>
+<script>
+     function sectionFun(){
+            window.location.href="./section.html"
+     }
+    $("#header").load("../common/personheader.html")
+    $("#footer").load("../common/footer.html")
+    $("#PX").mouseup(function () {
+        $("#pxs").toggle()
+        $("#pxx").toggle()
+        $("#PXDIV").toggle()
+    })
+    $("#PXDIV").children().click(function(){
+        $("#PXDIV").hide()
+        $("#pxx").show()
+        $("#pxs").hide()
+        $("#PX")[0].innerText = $(this)[0].innerText
+        console.log($(this))
+    })    
+    $("#JJJJ").mouseup(function () {
+        $("#JJDIV").slideToggle()
+        $("#DD").toggle()
+        $("#XX").toggle()
+    })
+    $("#JJJJ1").mouseup(function () {
+        $("#JJDIV1").slideToggle()
+        $("#DD1").toggle()
+        $("#XX1").toggle()
+    })
+    function sectionFun(){
+        window.location.href="./section.html"
+    }
+</script>

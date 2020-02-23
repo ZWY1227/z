@@ -1,0 +1,180 @@
+
+.classify {
+    margin-top: 197px;
+}
+.classify .classify_main{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.classify .classify_main .sify_main_top{
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
+}
+.classify .top_span{
+    padding: 10px 0 25px 0
+}
+.classify .top_span>span:nth-child(1){
+    font-weight: 600;
+    font-size: 24px;
+    color: #333;
+}
+.classify .top_span>span:nth-child(2){
+    margin-left: 10px;
+    font-size: 14px;
+    color: #333;
+}
+/* ======================left=============================== */
+.classify .sify_main_con .sifymaincon_l{
+    width: 180px;
+    display: inline-block;
+    padding-top:16px;
+    padding-bottom:10px
+}
+.classify .sifymaincon_l .sifymain_l_top{
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    color: #333;
+    padding-bottom: 20px;
+}
+.classify .sifymaincon_l .sifymain_l_top #JJJJ{
+    cursor: pointer;
+}
+.classify .sifymaincon_l .sifymain_l_top_ul ul{
+    list-style: none;
+    display: none;
+  
+}
+.classify .sifymaincon_l  .sifymain_l_top_ul li{
+    display: block;
+    margin-top:10px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #666;
+    padding: 0 0 16px 9px;
+}
+.sifymain_l_top2{
+    border-top: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+/* ======================right========================================== */
+.classify .sify_main_con .sifymaincon_r{
+    width: 1000px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 15px;
+}
+.classify .sifymaincon_r_top{
+    margin-top: 10px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+.classify .sifymaincon_r_top .top_left{
+    display: inline-block;
+}
+.classify .sifymaincon_r_top .top_right{
+    display: inline-block;
+}
+.classify .sifymaincon_r_top .top_left span{
+    color: #333;
+    font-size: 14px;
+    padding: 0 5px;
+    vertical-align: super;
+}
+.classify .sifymaincon_r_top .top_left input{
+    width: 16px;
+    height: 16px;
+    vertical-align: bottom;
+    margin-right: 3px;
+}
+.classify .sifymaincon_r_top .top_right{
+    display: inline-block;
+    position: relative;
+    right: 10px;
+}
+.classify .sifymaincon_r_top .top_right span{
+    color: #333;
+    font-size: 14px;
+
+}
+.classify .sifymaincon_r_top #PX{
+
+}
+.classify .sifymaincon_r_top #PX:hover{
+    cursor: pointer;
+    color: #000;
+}
+.classify .sifymaincon_r_top .top_right ul{
+    background: #fff;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.2);
+    border-radius: 2px;
+    display: inline-block;
+    position: absolute;
+    right: -10px;
+    top: 25px;
+    text-align: left;
+    width: 120px;
+    padding-top: 10px;
+}
+.classify .sifymaincon_r_top .top_right ul li{
+    display: block;
+    height: 32px;
+    text-align: left;
+    padding: 0 16px;
+    font-size: 14px;
+    color: #333;
+    background: #f5f5f5; 
+    
+}
+.classify .sifymaincon_r_top .top_right ul li:hover{
+    background: #ccc;
+}
+.sifylist img{
+    width: 230px;
+    height: 300px;
+}
+.sifylist .list_pro{
+    font-size: 14px;
+    margin: 0 0 12px;
+    padding:0 8px
+}
+.sifylist .list_price{
+    margin: 0 0 15px;
+    padding:0 8px
+}
+.sifylist .list_price>span:nth-child(1){
+    color: #333;
+    font-size: 14px;
+} 
+.sifylist .list_price>span:nth-child(2){
+    color: #333;
+    font-size: 12px;
+    text-decoration: line-through;
+} 
+/* =======================拖动滑块的样式======================================= */
+.JG input{
+display: inline-block;
+width: 48px;
+padding-left: 22px;
+}
+.JG {
+    padding-top: 40px;  
+    position: relative; 
+}
+.JG .max_JG .span2{
+   position: absolute;
+   right: 72px;
+   top: 42px;
+}
+.JG .min_JG .span1{
+    position: absolute;
+    left: 8px;
+    top: 42px;
+}

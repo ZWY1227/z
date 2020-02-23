@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GAP注册登录</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/regist.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1632805_pbnkhnznhg.css">
+    <link rel="icon" href="https://gap-cn-node.oss-cn-shanghai.aliyuncs.com/casaba_plus_assets/prod-2020.2.3-1/static/gap-144.f33f599c3d52f4169adf21ba71bf5cc8.png">
+    <script src="../js/jquery-1.11.3.js"></script>
+</head>
+<body>
+    <!-- 头 -->
+    <div id="header"></div>
+    <!-- 注册部分start===================================================================== -->
+    <div class="regist" style="margin-top: 197px;">
+        <div class="w">
+            <div class="login">
+                <!-- ------------上面的切换导航-------------- -->
+                <div class="log_nav">
+                    <span class="active" id="active_l">短信快捷登录/注册</span>
+                    <span class="" id="active_r">账号密码登录</span>
+                </div>
+                <!-- ------------中间main部分-------------- -->
+                <div class="login_main">
+                    <div class="login_mainleft" id="login_l" style="display: block;">
+                        <div class="login_pro">
+                            新会员注册成功后，可获赠10元无门槛会员欢迎礼券及首单双倍积分！<br />
+                            *新会员欢迎礼券将在1-2日送达您的帐户
+                        </div>
+                        <div class="label">
+                            <div class="fs_14 col_3">手机号</div>
+                            <input type="text" class="input" id="P_Phone" style="width:392px" placeholder="请输入手机号"
+                                onblur=inputFun(1)>
+                            <div class="ip_red P_Phone1">请输入手机号</div>
+                            <div class="ip_red P_Phone2">请输入正确的手机号</div>
+                        </div>
+                        <div class="label">
+                            <div class="fs_14 col_3">图形验证码</div>
+                            <div>
+                                <input type="text" class="input" id="P_Image" placeholder="请输入右侧图片中的验证码"
+                                    onblur=inputFun(2)>
+                                <img src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAAoCAIAAAC6iKlyAAACvUlEQVR42u3bPUoFMRAH8G2sLMTSWtDGswgigoVga2clWngAsbQWP8DSylJQrGxsvIJH0AtoIBBDNpn8ZzLJEt1lCsF9or+dN5lJfMP3fDW5hplghv69Xo9OTczQTbk7Fe8A+ut5+w8keJfQPSZ4H6UjZd2ROAW9+P44jqmgV9b3U9FFSRlA36nECd+UODfBz7aOTSB3rr7cE8GDBpXbWLOUg+zOiltfFWKEexArN7AWQAfW0ZKC+wqgU9ZDiXJtaxl01LpwzWRBR63z0PgN4LV09+YChx73HiD0uEQIxLnQY+sB6TGuNj9sqFizoLNNHgGdLRE4NyGIQm/cfpoA+VLWlaCRhjoKzarCSILTTQUjo3G+LqAb76W0gzbhysvk0O03C0uhbVUBof3yQqOXQPvWrJajXoLzFkPCznI7cQL6YOEQCR96/N3CVi/62oubc5UQK2egg+qRWjPBMu3SnM7o1OPJEhOPthK08sACTjSyxRAp67aFEKezYkb7Dy+lnHprKkyGJdBEWQ8GjZKxUD2jBftKpXsdwcppS7lPWRKF23j1rta7d9GMNtZa0EQDA+5QN1NmQyO1OFs6amS0j26iWZOnks7UCQt3VawBvfO05kfgbqwtet/QrCMu8IW2iIsHlsDdQNsvotD+nfX66IqHs+KWw3URhZMhOCKaTL/cfbChBR086fH7bGLoYC/Nhw7GTpl1qnS4gl41o6P64wjbO0Xl1KFcNKOduENH6izRe9TroxVqNGGHjyrZQ89s6bDc2ZVN3N4FDYyrMDZaLIaFAyG43Q7WaPGBIbflCLr1rPsE0IJz+wD65HohFWJl4meqRGtorm+bjFbsl6NzqclxnT4aVxb/AfWg6w0pPrrmwEJnceEvze2jJ99Cqj4ZLu/tqMT3fLX5t12tB9b1I/9fHxaa8IHNn8pqdP0AZ5WxdeaSUlYAAAAASUVORK5CYII="
+                                    alt="">
+                                <span class="fs_14 col_6">刷新</span>
+                            </div>
+                            <div class="ip_red P_Image1">请输入验证码</div>
+                            <div class="ip_red P_Image2">验证错误</div>
+                        </div>
+                        <div class="label">
+                            <div class="fs_14 col_3">验证码</div>
+                            <div>
+                                <input class="input" type="text" id="P_Yzm" placeholder="请输入短信验证码" onblur=inputFun(3)>
+                                <span class="com_btn">发送验证码</span>
+                            </div>
+                            <div class="ip_red P_Yzm1">请输入短信验证码</div>
+                        </div>
+                    </div>
+                    <!---------------- 中间main部分暂时隐藏的部分 --------->
+                    <div class="login_mainright" id="login_r" style="display: none;">
+                        <div class="label">
+                            <div class="lab_div fs_14 col_3">账号</div>
+                            <input class="inpt" id="phone" type="text" placeholder="请输入账号" onblur=inputFun(4)>
+                            <div class="ip_red phone1">请输入手机号码/邮箱</div>
+                            <div class="ip_red  phone2">请输入正确的手机号码/邮箱</div>
+                        </div>
+                        <div class="label">
+                            <div class="lab_div fs_14 col_3">密码</div>
+                            <input class="inpt" id="pass" type="password" placeholder="请输入密码" onblur=inputFun(5)>
+                            <div class="ip_red pass1">请输入密码</div>
+                            <div class="ip_red pass2">请输入正确密码</div>
+                        </div>
+                        <div class="label_span">
+                            <span style="display: inline-block;">
+                                <input type="checkbox" class="check">
+                            </span>
+                            <span class=" fs_14 col_3 ">记住我</span>
+                            <a href="javascript:;" class="fs_14 col_3 fr" onclick="layFun()">忘记密码</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------ 下面的部分--------------- -->
+                <div class="login_bottom">
+                    <div class="login com_bg fff fs_14" style="cursor: pointer;" id="loginGo">登录</div>
+                    <div class="wechat">
+                        <div>第三方登录</div>
+                        <i class="iconfont icon-icon"></i>
+                        <i class="iconfont icon-qq"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 脚 -->
+    <div id="footer"></div>
+    <!-- 弹出框部分=================================== -->
+    <div class="layerbg">
+        <div class="layer">
+            <div class="top">
+                <div class="titlep">验证手机</div>
+                <span id="close" onclick="closeFun()" style="cursor: pointer;">X</span>
+            </div>
+            <div class="label">
+                <div class="fs_14 col_3 title">手机号</div>
+                <input type="text" placeholder="请输入手机号" style="width: 322px;" class="">
+                <div class="ip_red">请输入手机号码</div>
+            </div>
+            <div class="label">
+                <div class="fs_14 col_3 title">图形验证码</div>
+                <div>
+                    <input type="text" placeholder="请输入右侧图片中验证码" style="width: 170px;">
+                    <img title="换一张"
+                        src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAAoCAIAAAC6iKlyAAACi0lEQVR42u3bvUoEMRAA4ANLG0E7sfIhtBJsfACfwEbsVRB8g3sCSyurE6yFqyyttbYUFDsrLXRhJReTndn5Sy57lzD9LV9mJzNZbvRTV5Y1qgQVej7rev+hNyo0ickccXjQxTKVBb3ATPmgl5wpIfTn/S0Uc3nQx51NKIYHjeCacz9/bfUGgjsX7pXTOySo0CzlDKnNUm6Dsnlx6Ikp3CropNYCaFleUzaDDg1Za6HTWcugE9UQFnSnNQjNPRu/z66aoDz0+GLXBR1adja+nGy0kRk6tu6ARn6vN6lbblycCy3IeivfTmjiHmDQlJ8kVg9EnA4trjApSgc337WTIbdMx+JEaHy5nC2hsy4C+n31pglfXAbtZIOaoIReO9p2MWxon7sNOnSnrKZ0+KxKXHmNTgoN1eigqkBpK6jRvub4480kxMpsaJM+2oduc5zSq9CV41RNBC0cWGTKSuigvFDEXZ5Cvd3e5XEQKaAlI/jkfN1FCuWgIPTW6Iam5Y5LahOtHWssNIcW3CuFGe2ju+Aq+5SacAnuWhd8Timqn2OXDqIylLOaiJvxhrtMZS00ohwnvnlG02fu0sYTHjSkDLVfjfVfO5UGGlJ2Hfogoel1Ge//48SXTYaQst+o+GNRhvbO4Jth0qtnH5rS8BArRtAa/ptFy4TGlV8nh0FY9dGdDY+gLndcYxUILcjlmB7fCVbp0Jx+s2ssU2iDGp2oYgTuPjT+TkDKSMODiCP3XFkPQ/E3Q82lEvJOiL8Zup2gPxILfcDQth9nXWGBir4SvULPAjknZOgLBf00PfBDn9H4ic16Zj/Na0ZnmsjtR/AhruC16A3lz9FP0WX/a4XhBuDc9T8smVaFzrR+AU2sGUvfV0tBAAAAAElFTkSuQmCC">
+                    <span class="fs_14">刷新</span>
+                </div>
+                <div class="ip_red title">请输入图形验证码运算结果</div>
+            </div>
+            <div class="label">
+                <div class="fs_14 col_3 title">验证码</div>
+                <div style="display: flex;">
+                    <input type="text" placeholder="请输入短信验证码" style="width: 190px;">
+                    <span class="com_btn">发送验证码</span>
+                </div>
+                <div class="ip_red">请输入短信验证码</div>
+                <div id="nextBtn" class="com_bg fff fs_14" style="cursor: pointer;">下一步</div>
+            </div>
+        </div>
+        <div class="layer1">
+            <div class="top">
+                <div class="titlep">重置密码</div>
+                <span id="close" onclick="closeFun()" style="cursor: pointer;">X</span>
+            </div>
+            <div class="label">
+                <div class="fs_14 col_3 title">输入密码</div>
+                <input id="admain_pass_1" onblur=inputFun(6) type="password" placeholder="请输入密码" style="width: 322px;">
+                <div class="ip_red admain_pass1">请输入密码</div>
+                <div class="ip_red admain_pass2">两次输入密码不一致</div>
+            </div>
+            <div class="label">
+                <div class="fs_14 col_3 title">确认新密码</div>
+                <input id="admain_pass_2" onblur=inputFun(7) type="password" placeholder="请输入确认密码"
+                    style="width: 322px;">
+                <div class="ip_red admain_pass3">请输入确认密码</div>
+                <div class="ip_red admain_pass4">两次输入密码不一致</div>
+            </div>
+            <div id="nextOver" class="com_bg fff fs_14" onclick="personindexFun()" style="cursor: pointer;">完成并登陆</div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+<script>
+    $("#header").load("../common/header.html")
+    $("#footer").load("../common/footer.html")
+      function personindexFun(){
+            window.location.href="../html/personindex.html"
+          }
+    // 判断是否满足条件，如果满足条件才可以登录
+    // 当input框不为空，而且满足条件的情况下才可以登陆（通过判断input框是否有红色边框看是否满足条件）
+    // 通过判断nav是否有下划线样式来判断是手机号验证码登录，还是账号密码登陆！！！！！！！
+    $("#loginGo").click(function () {
+        let valA = $("#P_Phone").val()
+        let valB = $("#P_Image").val()
+        let valC = $("#P_Yzm").val();
+        let text1 = $("#P_Phone").hasClass('inpt1')
+        let text2 = $("#P_Image").hasClass('inpt1')
+        let text3 = $("#P_Yzm").hasClass('inpt1')
+        // ================else==================
+        let val1 = $("#phone").val();
+        let val2 = $("#pass").val();
+        let text4 = $("#phone").hasClass('inpt1')
+        let text5 = $("#pass").hasClass('inpt1')
+        // ================================================
+        let activeTrue = $("#active_l").hasClass("active")
+        if (activeTrue) {
+            if ((valA !== '' && valB !== '' && valC !== '') && !(text1 || text2 || text3)) {
+                window.location.href = "../html/personindex.html"
+            }
+        } else {
+            if ((val1 !== '' && val2 !== '') && !(text4 || text5)) {
+                window.location.href = "../html/personindex.html"
+            }
+        }
+    })
+    //点击下一步，隐藏手机验证，显示新密码设置
+    $("#nextBtn").click(function () {
+        $(".layer").css("display", "none")
+        $(".layer1").css("display", "block")
+    })
+    // 忘记密码的跳转
+    function layFun() {
+        $(".layerbg").show();
+        $(".layer").show();
+        $(".layer1").hide();
+    }
+    //关闭弹出框
+    function closeFun() {
+        $(".layerbg").hide()
+    }
+    // 登录页导航nav功能的实现
+    $("#active_l").click(function () {
+        $("#active_l").addClass("active").siblings().removeClass("active")
+        $("#login_l").css("display", "block")
+        $("#login_r").css("display", "none")
+    })
+    $("#active_r").click(function () {
+        $("#active_r").addClass("active").siblings().removeClass("active");
+        $("#login_r").css("display", "block");
+        $("#login_l").css("display", "none");
+    })
+    //表单验证的种种功能
+    function inputFun(num) {
+        //手机号
+        if (num === 1) {
+            let val = $("#P_Phone").val()
+            if (val == '') {
+                $("#P_Phone").addClass("inpt1")
+                $(".P_Phone1").show()
+                $(".P_Phone2").hide()
+            }
+            else if (!(/^1[34578]\d{9}$/.test(val)) && val !== '') {
+                $("#P_Phone").addClass("inpt1")
+                $(".P_Phone2").show()
+                $(".P_Phone1").hide()
+            }
+            else {
+                $("#P_Phone").removeClass("inpt1")
+                $(".P_Phone2").hide()
+                $(".P_Phone1").hide()
+            }
+        }
+        //图片验证码
+        else if (num === 2) {
+            let val = $("#P_Image").val()
+            if (val ==='') {
+                $("#P_Image").addClass("inpt1")
+                $(".P_Image1").show();
+                $(".P_Image2").hide()
+            }
+            else if (val !== '12' && val !== '') {
+                $("#P_Image").addClass("inpt1")
+                $(".P_Image2").show();
+                $(".P_Image1").hide()
+            }
+            else {
+                $("#P_Image").removeClass("inpt1")
+                $(".P_Image1").hide()
+                $(".P_Image2").hide()
+            }
+        }
+        //验证码
+        else if (num === 3) {
+            let val = $("#P_Yzm").val();
+            if (val ==='') {
+                $("#P_Yzm").addClass("inpt1")
+                $(".P_Yzm1").show();
+            }
+            else {
+                $("#P_Yzm").removeClass("inpt1")
+                $(".P_Yzm1").hide();
+            }
+        }
+        //手机号邮箱验证
+        else if (num === 4) {
+            let val = $("#phone").val();
+            if (val === '') {
+                $("#phone").addClass("inpt1")
+                $(".phone1").show();
+                $(".phone2").hide();
+            }
+            else if (val !== '' &&
+                ((/^1[34578]\d{9}$/.test(val)) || /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(val))) {
+                $("#phone").removeClass("inpt1")
+                $(".phone1").hide();
+                $(".phone2").hide();
+            }
+            else {
+                $("#phone").addClass("inpt1")
+                $(".phone1").hide()
+                $(".phone2").show()
+            }
+        }
+        //密码验证
+        else if (num === 5) {
+            let val = $("#pass").val();
+            if (val === '') {
+                $("#pass").addClass("inpt1")
+                $(".pass1").show();
+                $(".pass2").hide();
+            }
+            else if (val !== '' && val !== "123456") {
+                $("#pass").addClass("inpt1")
+                $(".pass2").show();
+                $(".pass1").hide();
+            }
+            else {
+                $("#pass").removeClass("inpt1")
+                $(".pass1").hide();
+                $(".pass2").hide();
+            }
+        }
+        //判断两次密码是否一致
+        else if (num === 6) {
+            let val = $("#admain_pass_1").val();
+            let val1 = $("#admain_pass_2").val();
+            if (val === '') {
+                $("#admain_pass_1").addClass("inpt1")
+                $(".admain_pass1").show();
+                $(".admain_pass2").hide();
+            }
+            else if (val !== '' && val1 !== '' && val !== val1) {
+                $("#admain_pass_1").addClass("inpt1")
+                $("#admain_pass_2").addClass("inpt1")
+                $(".admain_pass2").show();
+                $(".admain_pass1").hide();
+            }
+            else {
+                $("#admain_pass_1").removeClass("inpt1")
+                $("#admain_pass_2").removeClass("inpt1")
+                $(".admain_pass2").hide();
+                $(".admain_pass1").hide();
+                $(".admain_pass3").hide();
+                $(".admain_pass4").hide();
+            }
+        }
+        else if (num === 7) {
+            let val = $("#admain_pass_1").val();
+            let val1 = $("#admain_pass_2").val();
+            if (val === '') {
+                $("#admain_pass_1").addClass("inpt1")
+                $(".admain_pass1").show();
+                $(".admain_pass2").hide();
+            }
+            else if (val !== '' && val1 !== '' && val !== val1) {
+                $("#admain_pass_1").addClass("inpt1")
+                $("#admain_pass_2").addClass("inpt1")
+                $(".admain_pass2").show();
+                $(".admain_pass1").hide();
+            }
+            else {
+                $("#admain_pass_1").removeClass("inpt1")
+                $("#admain_pass_2").removeClass("inpt1")
+                $(".admain_pass2").hide();
+                $(".admain_pass1").hide();
+                $(".admain_pass3").hide();
+                $(".admain_pass4").hide();
+            }
+        }
+    }
+    // 登录页导航nav功能的实现
+    //实现表单验证的各个功能==
+    //手机号***********************************************************************1
+    //1,为空提示为空，添加样式，显示第一行，隐藏第二行
+    //2,不为空，不满足手机号：提示错误：添加样式，显示第二行，隐藏第一行
+    //3,手机号：正常，默认,移除样式，隐藏第一行，隐藏第二
+    //图片验证********************************************************************2
+    //1,为空提示为空，添加样式，显示第一行，隐藏第二行
+    //2,不为空，不满足手机号提示错误：添加样式，显示第二行，隐藏第一行
+    //3,手机号：正常，默认,移除样式，隐藏第一行，隐藏第二行
+    //验证码验证*******************************************************************3
+    //1，添加样式并显示
+    //2，移除样式并隐藏
+    //右边隐藏的那一块开始======
+    //手机号邮箱验证********************************************************************4
+    //1,为空提示为空，添加样式，显示第一行，隐藏第二行
+    //2,不为空，不满足手机号或者邮箱：提示错误：添加样式，显示第二行，隐藏第一行
+    //3,手机号：正常，默认,移除样式，隐藏第一行，隐藏第二行
+    //密码验证*****************************************************************************5
+    //1，为空，添加样式，显示第一行，隐藏第二行
+    //2，不为空，不是123456，添加样式，显示第二行，隐藏第一行
+    //3.都不是，移除样式，隐藏第一行，隐藏第二行
+    //判断新旧密码是否一致*****************************************************************6
+    //获得第一个密码，获得第二个密码
+    //第一个为空，添加样式，显示第一个，隐藏第二个
+    //第一个不为空，第二个不为空，两个不等，显示第二行，隐藏第一行
+    //都不是就满足，恢复默认
+    //判断新旧密码是否一致*****************************************************************7
+    //获得第一个密码，获得第二个密码
+    //第一个为空，添加样式，显示第一个，隐藏第二个
+    //第一个不为空，第二个不为空，两个不等，显示第二行，隐藏第一行
+    //都不是就满足，恢复默认
+    //忘记密码*******************
+    //遮罩层显示，手机验证显示，新密码隐藏
+    //关闭弹出框*********************
+    //遮罩层隐藏
+</script>

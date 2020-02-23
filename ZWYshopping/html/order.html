@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1641042_bnco91ofnrl.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1632805_f9pu9e67wsn.css">
+    <link rel="icon" href="https://gap-cn-node.oss-cn-shanghai.aliyuncs.com/casaba_plus_assets/prod-2020.2.3-1/static/gap-144.f33f599c3d52f4169adf21ba71bf5cc8.png">
+    <link rel="stylesheet" href="../css/order.css">
+    <title>GAP我的订单</title>
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/country.js"></script>
+</head>
+<body>
+    <div class="headersmall">
+        <div class="w">
+            <div class="smallleft">
+                <span>&lt</span>
+                <span onclick="shopCarFun()" style="cursor: pointer;">返回购物袋</span>
+            </div>
+            <div class="smallcenter">
+                <img src="../img/gap.png.png" alt="">
+            </div>
+            <div class="smallright">
+                <span>
+                    400-680-8517
+                </span>
+                <span>
+                    <i class="iconfont icon-htmal5icon31"></i>
+                    在线客服
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="order_contain">
+        <div class="w">
+            <div class="left">
+                <div class="WL">
+                    <div class="lefttop">
+                        配送信息
+                    </div>
+                   
+                    <div class="leftorder">
+                        <div class="item">
+                            <div class="item1">
+                                <div class="title">
+                                    <span>默认</span>
+                                    <span>张婉莹</span>
+                                    <span>18749957686</span>
+                                </div>
+                                <div class="dat">
+                                    河南省郑州市新郑，等等等等
+                                </div>
+                            </div>
+                            <div class="item2">
+                                <div class="title">
+                                    <span>张婉莹</span>
+                                    <span>18749957686</span>
+                                </div>
+                                <div class="dat">
+                                    河南省驻马店市正阳县，等等等等
+                                </div>
+                            </div>
+                            <div class="item3" id="item3">
+                                <div class="title">
+                                    <span>张婉莹</span>
+                                    <span>18749957686</span>
+                                </div>
+                                <div class="dat">
+                                    河南省驻马店市正阳县，等等等等
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order">
+                            <span class="left1">
+                                <span><i class="iconfont icon-tianjia"></i></span>
+                                <span id="showdata" style="cursor: pointer;">新增收件地址</span>
+                            </span>
+                            <span class="right1" id="show">
+                                <span id="title" style="cursor: pointer;">显示全部地址</span>
+                                <span id="title1"><i class="iconfont icon-jiantouxia" id></i></span>
+                                <span style="display: none;cursor: pointer;" id="title2">收起</span>
+                                <span style="display: none;"id="title3"><i class="iconfont icon-jiantoushang" id></i></span>
+                            </span>
+   
+
+                        </div>
+
+                        <div class="PSFS">
+                            <div>
+                                配送方式
+                            </div>
+                            <div>
+                                <span>快递</span>
+                                <span>免运费</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shangpin">
+                        <div class="title">
+                            商品信息
+                        </div>
+                        <div class="contain">
+                            <ul>
+                                <li>
+                                    <img src="https://uxresources.baozun.com/prod/88000136/20191230/BDBFF28EDD840683902F7985135D989B.jpg"
+                                        alt="">
+                                </li>
+                                <li>
+                                    <p>Gap</p>
+                                    <p>女装| 蔡依林明星同款大廓形做旧纽扣牛仔夹克</p>
+                                    <p>165/84A(XS)、中度靛蓝</p>
+                                </li>
+                                <li>
+                                    <span>￥299.50</span>
+                                    <span>x1</span>
+                                </li>
+                                <li>
+                                    <span>小计:</span>
+                                    <span>￥299.50</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <img src="https://uxresources.baozun.com/prod/88000136/20200215/2E89E70EE1834293CC8EA8522CA49D23.jpg"
+                                        alt="">
+                                </li>
+                                <li>
+                                    <p>Gap</p>
+                                    <p>女孩|毛圈布内里徽标LOGO连帽衫</p>
+                                    <p>160cm(XXL)、石楠灰色</p>
+                                </li>
+                                <li>
+                                    <span>￥149.50</span>
+                                    <span>x1</span>
+                                </li>
+                                <li>
+                                    <span>小计:</span>
+                                    <span>￥149.50</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <img src="https://uxresources.baozun.com/prod/88000136/20190729/D80D44CBB14B250608FF29D606DF46DC.jpg"
+                                        alt="">
+                                </li>
+                                <li>
+                                    <p>Gap</p>
+                                    <p>女装|蔡依林同款男女同款情侣装舒适中腰弹力牛仔紧身裤</p>
+                                    <p>0(160/66A)、蓝紫牛仔布</p>
+                                </li>
+                                <li>
+                                    <span>￥174.50</span>
+                                    <span>x1</span>
+                                </li>
+                                <li>
+                                    <span>小计:</span>
+                                    <span>￥174.50</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pay">
+                        <div class="paytitle">
+                            支付信息
+                        </div>
+                        <div class="w2_buyFour">
+                                <div>
+                                    <input type="radio" name="zf">
+                                    <img src="../img/zhifubao.png" alt="">
+                                    <span>支付宝支付</span>
+                                </div>
+                                <div>
+                                    <input type="radio" name="zf">
+                                    <img src="../img/weixinzhifu.png" alt="">
+                                    <span>微信支付</span>
+                                </div>
+                                <div>
+                                    <input type="radio" name="zf">
+                                    <img src="../img/lipingka.png" alt="">
+                                    <span>Gap礼品卡支付</span>
+                                </div>
+                                <div>
+                                    <input type="radio" name="zf">
+                                    <img src="../img/lipingka.png" alt="">
+                                    <span>Old Navy礼品卡支付</span>
+                                </div>
+                            </div>
+                        <div class="ka">
+                            <span>查看礼品卡说明</span>
+                            <span>查询余额</span>
+                        </div>
+                        <div class="receipt">
+                            <span><i class="iconfont icon-fapiao"></i></span>
+                            <span>发票说明</span>
+                        </div>
+                        <div class="paybutton" onclick="payFun()">
+                            提交订单
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="rightBox">
+                    <div class="rb1">
+                        订单摘要
+                        <span>已选<span>3</span>件商品</span>
+                    </div>
+                    <div class="rb2">
+                        商品总额
+                        <span>￥<span id="SPtotle">623.50</span></span>
+                    </div>
+                    <div class="rb3 " id="YH">
+                        优惠
+                        <i class="iconfont icon-web-icon-" id="showdeliver"></i>
+                        <span>￥0.00</span>
+                        <div class="deliver" id="deliver">
+                            全场包邮
+                        </div>
+                        <i class="iconfont icon-jiantouxiangshang" id="ss"></i>
+                    </div>
+                    <div class="rb4">
+                        运费
+                        <span>免运费</span>
+                    </div>
+                    <div class="rb5">
+                        订单总金额
+                        <span>￥<span id="SPtotle1">623.50</span></span>
+                    </div>
+                    <div class="rb6">
+                        <span>下单即可能获得积分
+                        </span>
+                        <span >
+                            <a href="javascript:;" id="rules">查看规则</a>
+                        </span>
+                    </div>
+                    <div class="rb7">
+                        <button onclick="personindexFun()">继续购物</button>
+                    </div>
+                </div>
+                <div class="last">
+                    <div class="last1">
+                        <div class="aaa bbb1">需要帮助?<span class="click1">+</span><span class="click2">—</span></div>
+                        <div class="show1">
+                            <p><i class="iconfont icon-htmal5icon31"></i> <span> 在线客服
+                                </span><span>(服务时间:10:00-22:00)</span></p>
+                            <p>售后服务热线</p>
+                            <p>400-680-8517 <span class="fwTime">(服务时间:10:00-19:00)</span></p>
+                        </div>
+                    </div>
+                    <div class="last1">
+                        <div class="aaa bbb2">支付方式<span class="click3">+</span><span class="click4">—</span></div>
+                        <div class="show2">
+                            <span><i class="iconfont icon-zhifubao"></i> 支付宝</span>
+                            <span style="display: block;"><i class="iconfont icon-weixinzhifu1"></i> 微信</span>
+                            <span><i class="iconfont icon-shinshoplipinqia"></i> 礼品卡</span>
+                        </div>
+                    </div>
+                    <div class="last1">
+                        <div class="aaa bbb3">退换货政策<span class="click5">+</span><span class="click6">—</span></div>
+                        <div class="show3">
+                            <p>我们提供完善的售后服务，承诺自顾客签收商品之日（以签收快递日期为准）起15天内（减价商品和正价商品)，如对商品有任何不满意，我们将提供无理由退换货服务。以初上市吊牌价销售的商品退换货费用全免（不包括参与限时促销的正价商品和减价商品）。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+       <!-- 脚 -->
+     <div id="footer"></div>
+
+<!-- 弹出框 -->
+     <div class="layerbg" id="layerbg">
+            <div class="layer"id="layer">
+                <span class="quX" id="quX"><i class="iconfont icon-cha"></i></span>
+                    <div class="place">
+                            <h4>新增收货地址</h4>
+                            <div class="place_box">
+                                <div style="display: flex;">
+                                        <div class="box1">
+                                                <p class="box_p">收件人</p>
+                                                <input class="box_ipnut" id="input1" type="text" placeholder="请输入姓名" onblur="fun(1)">
+                                                <p class="pred p1">请输入姓名</p>
+                                                <p class="pred p2">请输入正确的姓名</p>
+                                                
+                                            </div>
+                                            <div class="box2">
+                                                <p class="box_p">手机号</p>
+                                                <input class="box_ipnut" id="input2" type="text" placeholder="请输入手机号" onblur="fun(2)">
+                                                <p class="pred p3">请输入手机号</p>
+                                                <p class="pred p4" >请输入正确的手机号</p>
+                                            </div>
+                                </div>
+                                <div class="box3">
+                                    <div class="box_shq">
+                                        <span>省</span>
+                                        <span style="padding-left: 12px;">市</span>
+                                        <span style="padding-left: 14px;">区</span>
+                                    </div>
+                                    <div class="box3_select">
+                                        <select style="margin-left: 0;" name="" id="Province" onchange="ProFun()">
+                                            <option value="">请选择省</option>
+                                        </select>
+                                        <select name="" id="City"  onchange="CityFun()">
+                                            <option value="">请选择市</option>
+                                        </select>
+                                        <select name="" id="Area"  onchange="AreaFun()">
+                                            <option value="">请选择县/区</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="box4">
+                                    <p>详细地址</p>
+                                    <textarea placeholder="请输入详细地址" id="input3" onblur="fun(3)"></textarea>
+                                    <p class="pred p5">请输入详细地址</p>
+                                    <p class="pred p6">请输入正确的详细地址</p>
+                                </div>
+                                <div class="box5">
+                                    <input type="checkbox"checked>
+                                    <span>设为默认地址</span>
+                                    <div>
+                                        <span id="qushow">取消</span>
+                                        <span class="commonsapn">保存并使用</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            <div class="layer1" id="layer1">
+                    <span class="quX" id="quX1"><i class="iconfont icon-cha"></i></span>
+                <h4>积分规则</h4>
+                <div class="title">*购买礼品卡享受积分，但使用礼品卡消费不享受积分</div>
+                <div class="title">1.积分累积及使用细则</div>
+                <div class="title">1.1积分累积</div>
+                <p>1.1.1 会员在大陆地区、香港地区和台湾地区的Gap集团企业门店及官方网站、天猫官方旗舰店、天猫gap礼品卡专卖店购物，提供会员卡号或手机号并完成付款后，将自动累积相应积分。*天猫渠道购物获取相应积分前，需先将天猫账号绑定同一手机号所申请的Gap会员卡。[如何绑定：进入天猫品牌店铺首页-点击右下角菜单栏“加入会员”-填写所要绑定的手机号-点击“申请”绑定会员卡，即可查看现有积分及自动累积相应积分]</p>
+                <p>1.1.2 如会员在购物当时未能成功累计积分，可通过官方微信在线客服或发送邮件至China_member@gap.com， 提供购物小票照片由客服人员帮助完成积分补录</p>
+                <p>1.1.3 大陆地区每消费1元人民币可累计1积分<br> 香港地区每消费1元港币可累计1积分
+                    <br> 台湾地区每消费5元新台币可累积1分
+                    <br> *购买礼品卡享受积分，但使用礼品卡消费不享受积分
+                    <br> *清仓店（包括香港E-max清仓店、重庆U城天街店、沈阳尚柏奥特莱斯店，深圳华盛奥特莱斯店及可能增加的其他清仓店）及非Gap集团自营店的任何消费皆不计入积分
+                </p>
+
+            </div>
+      </div>
+</body>
+<script>
+    function personindexFun(){
+        window.location.href="./personindex.html"
+    }
+    function payFun(){
+        window.location.href="./pay.html"
+    }
+    function shopCarFun(){
+        window.location.href="../html/shopCar.html"
+    }
+    function fun(value){
+        if(value==1){
+            let val=$("#input1").val()
+            if(val===''){
+                $("#input1").addClass("commonpred")
+                $(".p1").show()
+                $(".p2").hide()
+            }
+            else if(!(val=="张婉莹"||val=="智慧敏"||val=="李赛男")){
+                $("#input1").addClass("commonpred")
+                $(".p2").show()
+                $(".p1").hide()
+            }
+            else{
+                $("#input1").removeClass("commonpred")
+                $(".p2").hide()
+                $(".p1").hide()
+            }
+        }else if(value==2){
+            let val=$("#input2").val()
+            if(val===''){
+                $("#input2").addClass("commonpred")
+                $(".p3").show()
+                $(".p4").hide()
+            }
+            else if (!(/^1[34578]\d{9}$/.test(val)) && val !== '') {
+                $("#input2").addClass("commonpred")
+                $(".p4").show()
+                $(".p3").hide()
+            }
+            else{
+                $("#input2").removeClass("commonpred")
+                $(".p3").hide()
+                $(".p4").hide()
+            }
+        }
+        else if(value==3){
+            let val=$("#input3").val()
+            if(val===''){
+                $("#input3").addClass("commonpred")
+                $(".p5").show()
+                $(".p6").hide()
+            }
+            else if (/\d/.test(val)&&val!=='') {
+                $("#input3").addClass("commonpred")
+                $(".p6").show()
+                $(".p5").hide()
+            }
+            else{
+                $("#input3").removeClass("commonpred")
+                $(".p5").hide()
+                $(".p6").hide()
+            }
+        }
+    }
+    $("#footer").load("../common/footer.html")
+    $(".bbb1").click(function () {
+        $(".click1").toggle()
+        $(".click2").toggle()
+        $(".show1").toggle()
+    })
+    $(".bbb2").click(function () {
+        $(".click3").toggle()
+        $(".click4").toggle()
+        $(".show2").toggle()
+    })
+    $(".bbb3").click(function () {
+        $(".click5").toggle()
+        $(".click6").toggle()
+        $(".show3").toggle()
+    })
+    $("#show").click(function(){
+        $("#item3").toggle()
+        $("#title").toggle()
+        $("#title1").toggle()
+        $("#title2").toggle()
+        $("#title3").toggle()
+    })
+    $("#showdata").click(function(){
+        $("#layerbg").show()
+        $("#layer").show()
+    })
+    $("#qushow").click(function(){
+        $("#layerbg").hide()
+        $("#layer").hide()
+    })
+    $("#quX").click(function(){
+        $("#layerbg").hide("3")
+        $("#layer").hide("3")
+    })
+    $("#quX1").click(function(){
+        $("#layerbg").hide("3")
+        $("#layer1").hide("3")
+    })
+    $("#rules").click(function(){
+        $("#layerbg").show()
+        $("#layer1").show()
+    })
+    $("#showdeliver").mousemove(function(){
+        $("#deliver").show()
+        $("#ss").show()
+    })
+    $("#showdeliver").mouseout(function(){
+        $("#deliver").hide()
+        $("#ss").hide()
+    })
+      // --------------------------循环添加省--------------------------------
+      console.log(country)
+      let cit = ""
+        for (let i = 0; i < country.length; i++) {
+            cit += `<option value="">` + country[i].name + `</option>`
+        }
+        $("#Province").append(cit)
+        // -------------------循环添加所在省对应的市------------记得添加前移除前一个---------------------------
+        function ProFun() {
+            let index=$("#Province").children('option:selected').index()-1
+           let length=country[index].city.length
+           $("#City").children().not(':eq(0)').remove()
+           let shi=""
+           for(let i=0;i<length;i++){
+            shi+= `<option value="">` + country[index].city[i].name + `</option>`
+           }
+           $("#City").append(shi)
+        }
+        // ------------------循环添加所在省所在市所对应的区------------记得添加前删除前一个----------------------
+        function CityFun() {
+            let index1=$("#Province").children('option:selected').index()-1
+            let index2=$("#City").children('option:selected').index()-1
+            let length=country[index1].city[index2].area.length
+            $("#Area").children().not(':eq(0)').remove()
+            let qu=""
+            for(let i=0;i<length;i++){
+                qu+=`<option value="">` + country[index1].city[index2].area[i] +`</option>`
+            }
+            $("#Area").append(qu)
+        }
+        // function  AreaFun() {
+        //     console.log($("#P").children('option:selected')[0].innerText,"============省")
+        //     console.log($("#C").children('option:selected')[0].innerText,"=========市")
+        //     console.log($("#E").children('option:selected')[0].innerText,"======区")
+        // }
+</script>

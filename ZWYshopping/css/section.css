@@ -1,0 +1,246 @@
+.section .section_one{
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    /* background-color: blue; */
+    padding:24px 0;
+}
+.section .section_one div{
+    display: inline-block;
+}
+.section .section_one a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666;
+    line-height: 12px;
+    margin-right: 5px;
+}
+.section_two{
+    margin-bottom: 50px;
+}
+.section_two>.left{
+    display: inline-block;
+    width: 590px;
+}
+/* .section_two>.left div:nth-child(2){
+    display: none;
+} */
+/* =============右边部分========================== */
+.section_two>.right{
+    display: inline-block;
+    width: 583px;    
+    vertical-align: top;
+    padding-left: 22px;
+    float: right;
+}
+.section_two>.right>.righttitle{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: left;
+    line-height: 24px;
+}
+.section_two>.right>.smalltitle{
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+    line-height: 14px;
+    margin-bottom: 24px;
+}
+
+
+
+
+.section_two>.right>.right_active{
+    border-left:1px solid #be200a;
+    height: 28px;
+    background: #f9f9f9;
+    padding: 6px 12px 6px 0;
+    line-height: 28px;
+    font-size: 12px;
+    /* position: relative; */
+}
+.section_two>.right>.right_active span:nth-child(1){
+    color: #be200a;
+    margin-right: 10px;
+    padding-left: 9px;
+    line-height: 28px;
+}
+.section_two>.right>.right_active span:nth-child(2){
+    color: #333;
+}
+
+
+.section_two>.right>.right_price{
+    margin:16px 0;
+}
+.section_two>.right>.right_price span:nth-child(1){
+    color: #be200a;
+    font-size: 24px;
+}
+.section_two>.right>.right_price span:nth-child(2){
+    margin-left: 6px;
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+}
+.section_two>.right>.rightcolor{
+    padding:16px 0;
+    height: 70px;
+}
+.section_two>.right>.rightcolor>.title{
+    font-size: 14px;
+    margin: 0 0 12px;
+    color: #999;
+}
+.section_two>.right>.rightcolor>.title>span:nth-child(2){
+    font-size: 14px ;
+    color: #333;
+}
+.section_two>.right .rightimg img{
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.section_two>.right>.right_size{
+    padding:16px 0 10px;
+}
+.section_two>.right>.right_size>.size_title{
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: #999;
+}
+.section_two>.right>.right_size ul li{
+    display: inline-block;
+    width: 171px;
+    height: 32px;
+    background-color: #fff;
+    border: 1px solid #999;
+    text-align: center;
+    line-height: 32px;
+    color: #999;
+    margin: 0 18px 14px 0;
+    font-size: 12px;
+    cursor: pointer;
+}
+.section_two>.right .chooseSIZE{
+    color: #333;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.section_two>.right>.right_input{
+    padding:0 0 40px;
+}
+.section_two>.right>.right_input>.title{
+    margin-bottom: 12px;
+    font-size: 14px;
+    color:#999; 
+}
+.section_two>.right>.right_input>.title>span{
+    color: #333;
+}
+.section_two>.right>.right_input>.JJH{
+    width: 106px;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #999;
+}
+.section_two>.right>.right_input>.JJH span{
+    width: 25px;
+    display: inline-block;
+    text-align: center;
+}
+.section_two>.right>.right_input>.JJH>span:nth-child(1){
+    border-right: 1px solid #999;
+}
+.section_two>.right>.right_input>.JJH>.span2{
+    border-left: 1px solid #999;
+}
+.section_two>.right>.right_input>.JJH input{
+    width: 25px;
+    text-align: center;
+    border: 0;
+}
+#ll,#rr{
+    cursor: pointer;
+}
+
+
+.section_two>.right>.btnbox{
+    height: 40px;
+    margin: 0 0 16px;
+}
+.section_two>.right>.btnbox span{
+    display: inline-block;
+    text-align: center;
+    height: 40px;
+    width: 250px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #122147;
+    padding: 0 16px;
+    border: 1px solid #122147;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.section_two>.right>.btnbox .commonbutton{
+    background-color: #122147 !important;
+    color:#fff !important;
+}
+/* ================================================ */
+.section .like_title{
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+    line-height: 24px;
+    padding-top: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+/* ================================================= */
+
+.section_fore .list-img{
+     text-align: center;
+}
+/* =================需要操作的common样式======================================== */
+/* 选择后的颜色 */
+.common_style{
+    width: 20px !important;
+    height: 20px !important;
+    padding: 2px !important;
+    border: 1px solid #122147;
+}
+.right_size .common_size{
+    border: 1px solid #042F6A !important;
+    color: #042F6A !important;
+}
+
+/* 
+img1list  img1listSON
+img2list  img2listSON
+移除大的和son的exzoom_img_box，exzoom_img_ul样式
+toggle切换大盒子的隐藏显示大盒子
+#color的innerhtml  第一个海军蓝，第二个麻灰色
+操作HJL    MHS这两个DOM元素
+*/
+/* 
+操作点击#SIZE的children
+获取innerHTML
+赋值给#chooseSIZE的innerHTML
+*/
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,212 @@
+/*==================================== 脚部开始============================= */
+.footer_main .main_top{
+width: 100%;
+background-color: #0d2347;
+
+}
+.footer_main .main_top .w{
+    height:88px;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.main_top>.w>span{
+    float: left;
+}
+.main_top>.w>span:nth-child(1){
+    display: inline-block;
+    color:#fff;
+    height: 40px;
+    margin-bottom: 8px;
+    font-weight: 300;
+    font-size: 16px;
+}
+.main_top>.w>span:nth-child(2){
+    position: relative;
+    margin-left: 20px;
+    margin-right: 50px;
+
+}
+.main_top>.w>span:nth-child(2) input{
+    display: inline-block;
+    width: 380px;
+    height: 40px;
+   padding-left:12px;
+   padding-right: 12px;
+}
+.main_top>.w>span:nth-child(2) i{
+    font-size: 24px;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+.main_top>.w>span:nth-child(3){
+    color:#fff;
+    margin-right: 208px;
+}
+.main_top>.w>span:nth-child(3) i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color:  #0d2347;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-top: 4px;
+    margin-left: 15px;
+}
+.main_top>.w>span:nth-child(4) i{
+    display: inline-block;
+}
+.main_top>.w>span:nth-child(4){
+    display: inline-block;
+    color: #fff;
+    width: 138px;
+    font-size: 14px;
+}
+/* ==========================脚步中间部分================================ */
+.main_center{
+    width: 100%;
+    clear: both;
+}
+.main_center .w{
+    padding-top:26px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.main_center .w ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+
+}
+.main_center  ul li.title{
+    color: #0d2347;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0;
+ 
+}
+.main_center  ul li{
+    color: #666;
+    font-size: 12px;
+    text-align: left;
+    padding: 8px 0;
+    line-height: 24px;
+    display: block;
+}
+.main_center  .title{
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.main_center .ff_one .ffone_p1{
+    font-size: 14px;
+    margin: 0;
+    font-weight: 700;
+}
+.main_center .ff_one .ffone_p2{
+    font-size: 12px;
+    color: #333;
+    margin-top:10px;
+}
+.main_center .ff_lll p{
+    font-size: 12px;
+    color: #666;
+    padding: 5px 0;
+
+}
+.main_center  a{
+    border: 1px solid #333;
+    color: #042f6a;
+    width: 72px;
+    min-width: 72px;
+    padding: 0 12px;
+    font-size: 12px;
+    height: 28px;
+    line-height: 26px;
+    text-decoration: none;
+   }
+   .main_center .ff_one img{
+    width: 196px;
+    height: 130px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+   }
+   .main_center .ff_two a{
+       margin-top:15px;
+       margin-bottom: 40px;
+   }
+   .main_center .ff_two img{
+ 
+       width: 170px;
+       height: 116px;
+   }
+   .main_center .ff_three img{
+    margin-top: 15px;
+
+   }
+   /* ===========================脚步最后部分========= */
+   .main_footer{
+       text-align: center;
+       font-size: 12px;
+       margin-top: 40px;
+   }
+   .main_footer a{
+       text-decoration: none;
+       color: #333;
+   }
+   .main_footer  div{
+       margin-bottom: 8px;
+   }
+   .main_footer img{
+       width: 20px;height: 22px;
+       margin-right: 4px;
+       vertical-align: sub;
+   }
+   .main_footer .main_foo_two{
+       line-height: 1.2;
+       margin-bottom: 16px !important;
+   }
+   .main_footer .main_foo_two span{
+       margin:0 5px;
+   }
+   /* ===================================== */
+   .footer_main .main_top .hideWX{
+    position: absolute;
+    bottom: -150px;
+    right: -38px;
+    text-align: center;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.footer_main .main_top .hideWX img{
+    width: 100px;
+    height: 100px;
+    padding-top: 15px;
+}
+.footer_main .main_top .hideWX p{
+    color: #333;
+    font-size: 12px;
+}
+.footer_main .main_top .hideAtt{
+    position: absolute;
+    right: 0px;
+    width: 282px;
+    height: 115px;
+    background-color: #fff;
+    font-size: 13px;
+    padding: 10px;
+    line-height: 20px;
+    color: rgb(77, 72, 72);
+    bottom: -156px;
+    border-radius: 5px;
+    display: none;
+    border: 1px solid #ccc;
+}

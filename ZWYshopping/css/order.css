@@ -1,0 +1,664 @@
+.headersmall{
+    width: 100%;
+    height: 40px;
+    padding:16px 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #f5f5f5;
+    position: fixed;
+    top: 0;
+}
+.headersmall .w{
+    height: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+    font-size: 14px;
+}
+.headersmall .smallleft{
+    display: inline-block;
+    color: #000;
+    height: 20px; 
+}
+.headersmall .smallcenter{
+    display: inline-block;
+}
+.headersmall .smallright{
+    display: inline-block;
+    color:#333;
+}
+.headersmall .smallright span:nth-child(2) i{
+    margin-left: 30px;
+    display: inline-block;
+    font-size: 20px;
+}
+.order_contain .right{
+    float: right;
+}
+.order_contain{
+    margin-top: 110px;
+}
+/* ==========左边=======配送信息===================== */
+.order_contain .left{
+    width: 842px;
+    display: inline-block;
+}
+.order_contain .left .lefttop{
+    background-color: #f5f5f5;
+    padding: 0 0 0 12px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+  
+.order_contain .left .PSFS{
+    font-size: 14px;
+    color: #333;
+    margin: 40px 12px 40px 0;
+}
+.order_contain .left  .PSFS div:nth-child(1){
+    margin-bottom: 20px;
+}
+.order_contain .left  .PSFS div:nth-child(2) span:nth-child(1){
+    margin-right: 50px;
+}
+.order_contain .left  .PSFS:nth-child(2) span:nth-child(2){}
+/* =====================选择地址============================ */
+.order_contain .left .leftorder{
+    margin-bottom:50px;
+}
+.order_contain .left .leftorder .item{ 
+    margin: 0 10px;
+}
+.order_contain .left .leftorder .item .item3{
+    display: none;
+}
+.order_contain .left .leftorder .item>div{
+    width: 370px;
+    height: 65px;
+    border: 1px solid #bfbfbf;
+    border-radius: 2px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    margin:0 0 24px;
+    padding: 16px 12px;
+    display: inline-block;
+}
+.order_contain .left .leftorder .item div .title{
+    padding-bottom: 16px;
+    border-bottom: 1px dashed #d9d9d9;
+    font-size: 14px;
+    color:#333;
+}
+.order_contain .left .leftorder .item div .dat{
+    margin-top: 12px;
+    color:#333;
+    font-size: 14px;
+}
+.order_contain .left .leftorder .item .item1{
+    margin-right: 25px;
+}
+.order_contain .left .leftorder .item .item2{}
+
+.order_contain .left .leftorder .order{
+    padding-right: 15px;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+}
+.order_contain .left .leftorder .order .left1{}
+.order_contain .left .leftorder .order .left1 i{
+    font-size: 22px;
+}
+.order_contain .left .leftorder .order .right1{}
+.order_contain .left .leftorder .order .right1 i{
+    font-size: 18px;
+}
+/* ============商品===================================== */
+
+.order_contain .left .shangpin .title{
+    background-color: #f5f5f5;
+    padding: 0 0 0 12px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+.order_contain .left .shangpin .contain{
+   width: 842px;
+   height: 216px;
+   overflow: scroll;
+}
+.order_contain .left .shangpin .contain::-webkit-scrollbar{
+    width: 6px;height: 0;
+}
+.order_contain .left .shangpin .contain::-webkit-scrollbar-track{
+    background-color: rgb(235,235,235);
+    border-radius: 3px;
+}
+.order_contain .left .shangpin .contain::-webkit-scrollbar-thumb{
+    background-color: rgb(101,129,163);
+    border-radius: 3px;
+}
+.order_contain .left .shangpin .contain ul{
+    padding-top: 20px;
+    padding-right: 22px;
+    margin-bottom: 12px;
+    display: flex;
+    height: 106px;
+}
+.order_contain .left .shangpin .contain ul img{
+    width: 80px;
+    height: 106px;
+}
+.order_contain .left .shangpin .contain ul {
+    font-size: 14px;
+    color:#333;
+    margin-bottom: 5px;
+}
+.order_contain .left .shangpin .contain ul li:nth-child(1){
+    margin-left: 10px;
+}
+.order_contain .left .shangpin .contain ul li:nth-child(2){
+    width: 250px;
+    margin-left: 15px;
+}
+.order_contain .left .shangpin .contain ul li:nth-child(3){
+    margin-left: 150px;
+}
+.order_contain .left .shangpin .contain ul li:nth-child(4){
+    margin-left: 125px;
+}
+.order_contain .left .shangpin .contain ul li:nth-child(2) p:last-child{
+    margin-top: 20px;
+    color: #999;
+}
+/* ====================支付信息============================== */
+.order_contain .left .pay{
+    margin-top: 25px;
+    padding: 0 12px;
+
+    }
+.order_contain .left .pay .paytitle{
+    background-color: #f5f5f5;
+    padding: 0 0 0 12px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+.w2_buyFour{
+    display: flex;
+}
+.w2_buyFour>div{
+    display: flex;
+    font-size: 14px;
+    width: 25%;
+    height: 35px;
+    margin-top: 25px;
+}
+.w2_buyFour>div>input{
+    margin-top: 10px;
+    cursor: pointer;
+}
+.w2_buyFour>div>img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.w2_buyFour>div>span{
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.order_contain .left .pay .ka{
+    font-size: 12px;
+    color:#333;
+    float: right;
+    margin-right: 50px;
+}
+.order_contain .left .pay .receipt{
+font-size: 14px;
+color:#333;
+margin-top: 40px
+}
+.order_contain .left .pay .paybutton{
+    font-size: 16px;
+    padding: 0 24px;
+    height: 40px;
+    color: #fff;
+    background: #122147;
+    margin-top: 56px!important;
+    width: 262px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+/* ============================================================= */
+.layerbg{
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    display:none; 
+    overflow: scroll; 
+}
+.layerbg .layer1{
+    width: 800px;
+    height: 1500px;
+    position: absolute;
+    left:50%;
+    top:10%;
+    /* top: 50%; */
+    margin-left: -400px;
+    /* margin-top: -600px; */
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    display:none;
+    padding: 32px;
+}
+.layerbg .layer1 h4{
+    text-align: center
+    ;
+    margin: 20px;
+}
+.layerbg .layer1 .title{
+    margin: 10px;
+}
+.layerbg .layer1 p{
+    margin: 10px 0;
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.quX{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.pred{
+    color: #ed4040 !important;
+    font-size: 14px;
+    display: none;
+}
+.commonpred{
+    border:1px solid #ed4040 !important;
+}
+.layerbg .layer{
+    width: 540px;
+    height: 500px;
+    position: absolute;
+    margin: auto;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background-color: #fff;
+    border-radius: 5px;
+    display:none;
+    padding:15px 20px 20px;
+}
+.layerbg .layer .place h4{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.place{
+    padding: 20px 16px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.box1,.box2{
+    height: 85px;
+    display: inline-block;
+}
+.box2{
+    margin-left: 10px;
+}
+.box_p{
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+    color: #333;
+    margin-bottom: 8px;
+}
+.box_ipnut{
+    width: 214px;
+    height: 34px;
+    padding: 0 12px;
+    border: 1px solid rgb(217,217,217);
+}
+.box_shq{
+    display: flex;
+    margin-bottom: 12px;
+}
+.box_shq>span{
+    display: inline-block;
+    width: 33.3%;
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+}
+.box3_select{
+    display: flex;
+}
+.box3_select>select{
+    width: 154px;
+    height: 36px;
+    padding: 0 20px;
+    margin-left: 16px;
+    color:#333 ;
+    border: 1px solid rgb(217,217,217);
+}
+.box4{
+    margin: 20px 0 24px;
+}
+.box4>p{
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+    color: #333;
+    margin-bottom: 8px;
+}
+.box4>textarea{
+    width: 464px;
+    height: 47px;
+    padding: 10px 15px;
+    min-height: 47px;
+    border: 1px solid rgb(217,217,217);
+}
+.box4>textarea::-webkit-input-placeholder{
+    color: rgb(217,217,217);
+}
+
+.box5{
+
+}
+.box5>input{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.box5>span{
+    font-size: 14px;
+    display: inline-block;
+    height: 19px;
+    line-height: 19px;
+    margin-left: 5px;
+}
+.box5>div>span{
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 40px;
+    width: 240px;
+    height: 36px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 3px;
+    background-color: #fff;
+    color:rgb(18,33,71);
+    border: 1px solid rgb(18,33,71);
+}
+.box5>div>span:nth-child(1){
+    margin-right: 10px;
+}
+.commonsapn{
+    background-color: rgb(18,33,71) !important;
+    color: #fff !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========右边============================ */
+.rightBox{
+    width: 302px;
+    background-color: rgb(245,245,245);
+    padding: 16px;
+}
+.rightBox>.rb1{
+    font-size: 18px;
+    height: 21px;
+    line-height: 21px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+}
+.rightBox>.rb1>span{
+    float: right;
+    font-size: 12px;
+    height: 14px;
+    line-height: 22px;
+    color: #333;
+}
+.rightBox>.rb1>span span{
+    margin:0 3px;
+    
+}
+.rightBox>.rb2{
+    font-size: 14px;
+    height: 16px;
+    line-height: 16px;
+    margin-bottom: 16px;
+    margin-top: 15px;
+}
+.rightBox>.rb2>span{
+   float: right;
+}
+.rightBox>.rb3{
+    font-size: 14px;
+    height: 16px;
+    line-height: 16px;
+    margin-bottom: 16px;
+    color: #be200a;
+}
+.rightBox>.rb3 .deliver{
+    position: absolute;
+    right: 367px;
+    top: 224px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    display: none;
+}
+.rightBox>.rb3 #showdeliver{
+    display: inline-block;
+    font-size: 22px;
+    color: #333;
+    vertical-align: middle;
+}
+.rightBox>.rb3 #ss{
+  position: absolute;
+    right: 616px;
+    display:none;
+    bottom: 328px;
+    background: #fff;
+    font-size: 18px;
+    color: #ccc;
+}
+
+
+.rightBox>.rb3>span{
+   float: right;
+}
+.rightBox>.rb4{
+    padding-top:5px;
+    font-size: 14px;
+    height: 16px;
+    line-height: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.rightBox>.rb4>span{
+    float: right;
+}
+.rightBox>.rb5{
+    font-size: 14px;
+    height: 21px;
+    margin: 16px 0 25px;
+}
+.rightBox>.rb5>span{
+    float: right;
+    font-size: 18px;
+}
+.rightBox>.rb6{
+    text-align: right;
+    font-size: 12px;
+    color: #333;
+}
+.rightBox>.rb6 a{
+    color:#333;
+    text-decoration: underline;
+}
+.rightBox>.rb7{
+    margin-top: 20px;
+}
+.rightBox>.rb7>button{
+    width: 306px;
+    height: 36px;
+    padding: 0 24px;
+    border: 0;
+    border-radius: 2px;
+    border: 1px solid black;
+    background: rgb(18,33,71);
+    color: #fff;
+    font-size: 16px;
+}
+.last{
+    float: right;
+    background-color: #fff;
+    margin-top: 34px;
+    width: 298px;
+    padding: 21px 16px 24px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+}
+.last>.last1{
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 15px;
+}
+.last>.last1:nth-child(1){
+    margin-top: 0;
+}
+.last>.last1>.aaa>span{
+    float: right;
+}
+.last>.last1>.aaa>span:nth-child(2){
+    display: none;
+}
+.aaa>span{
+    cursor: pointer;
+}
+.last>.last1>.show1{
+    font-size: 14px;
+    display: none;
+}
+.last>.last1>.show1>p>i{
+    margin-left: 10px;
+}
+.last>.last1>.show1>p>span:nth-child(3){
+    color: #666;
+}
+.last>.last1>.show1>p:nth-child(1){
+    margin: 20px 0;
+}
+.last>.last1>.show1>p:nth-child(2){
+    margin: 20px 0 10px 30px;
+}
+.last>.last1>.show1>p:nth-child(3){
+    margin: 0 0 0 30px;
+}
+.fwTime{
+    color: #666;
+}
+.show2{
+    margin: 20px 0 0 0;
+    padding-bottom: 20px;
+    display: none;
+}
+.show2>span{
+    margin-left: 40px;
+    float: left;
+}
+.show2 i{
+    font-size: 20px;
+}
+.show2>span:nth-child(1){
+    margin-left: 0;
+}
+.show2>span:nth-child(1) i{
+    color: rgb(30,149,212);
+}
+.show2>span:nth-child(2) i{
+    color: rgb(0,183,0);
+}
+.show2>span:nth-child(3) i{
+    color: rgb(18,33,71);
+}
+.show3{
+    margin-top: 14px;
+    display: none;
+}
+.show3>p{
+    font-size: 14px;
+    color: #666;
+}

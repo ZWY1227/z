@@ -1,0 +1,1195 @@
+.account{
+ background-color: #f5f5f5;
+ margin-top:197px;
+}
+.account .w{
+    padding:32px 0 80px;
+    display: flex;
+}
+.account .account_left{
+    display: inline-block;
+    width: 231px;
+    height: 450px;
+    background-color: #fff;
+}
+.account .account-right{
+  
+    display: inline-block;
+    margin-left: 19px;
+    width: 945px;
+    vertical-align: top;
+}
+/* ========left样式=========== */
+.account .account_left .title{
+    color: #333;
+    padding: 16px 0 10px 11px;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom:3px solid #f5f5f5
+}
+.account .account_left .leftTop{
+ font-size: 14px;
+}
+.account .account_left i{
+    font-size: 18px;
+}
+
+.account .account_left .leftTop ul{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.account .account_left .leftTop ul li:nth-child(1){
+    color: #333 !important;
+    font-weight: 700;
+}
+.account .account_left  ul li{
+    display: block;
+    padding-left: 44px;
+    color: #666;
+    height: 32px;
+    line-height: 32px;
+    cursor: pointer;
+}
+.account .account_left  ul li:hover{
+    background-color: #f5f5f5;
+}
+.account .account_left .left_bottom{
+    font-size: 14px;
+    background-color: #fff;
+}
+/* ==========================右边start========================================= */
+.account .account-right>.title{
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-bottom: 16px;
+    background-color: #f5f5f5;
+}
+.account .account-right .top{
+    background-color: #fff;
+    display: flex;
+    padding: 24px 24px 16px;
+    justify-content: space-between;
+}
+.account .account-right .topleft{
+    width: 363px;
+    display: inline-block;
+}
+.account .account-right .topleft .hello{
+    display: flex;
+    justify-content: space-between;
+}
+.account .account-right .topleft .hello span:nth-child(1){
+    font-size: 14px;
+    color: #333;
+    margin:0 0 8px;
+}
+.account .account-right .topleft .hello span:nth-child(2){
+    font-size: 14px;
+    color: #999;
+}
+.account .account-right .topleft .hello1{
+    color: #666;
+    font-size: 14px;
+}
+.account .account-right .topleft .VIP{
+    display:flex;
+    justify-content: space-between;
+}
+.account .account-right .topleft .VIP img{
+    width: 370px;
+    height: 30px;
+}
+.account .account-right .topleft .VIP span:nth-child(1){
+    font-size: 14px;
+    color:#333
+}
+.account .account-right .topleft .VIP span:nth-child(2){
+    font-size: 14px;
+    color:#666
+}
+.account .account-right .topleft .VIP span:nth-child(2) span{
+    color: #042f6a;
+}
+
+/* ======================================================================== */
+/* 通过添加旋转180度改变让正反两面盒子 */
+.comrotate{
+    transform: rotateY(180deg);
+}
+/* 让旋转的子盒子保留3d转换 */
+.account .account-right .topright{
+     width: 335px;
+     display: inline-block;
+     position: relative;
+     transform-style: preserve-3d;
+     transition: 0.6s;
+}
+.account .account-right .topright img{
+    width: 337px;
+    height: 210px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.account .account-right .topright .p1{
+    position: absolute;
+    left: 90px;
+    bottom: 47px;
+    color: #042f6a;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.account .account-right .topright .p2{
+    position: absolute;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    left: 140px;
+    bottom: 25px;
+    cursor: pointer;
+}
+/* 设置正反面的盒子背面不可见 */
+/* ============正面==================== */
+.account .account-right .topright .font{
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+/* ============背面==================== */
+.account .account-right .topright .back{
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 335px;
+    height: 186px;
+    border-radius: 5px;
+    padding: 10px 0;
+    font-size: 14px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: absolute;
+    right: -12px;
+    top: 0;
+}
+.account .account-right .topright .back .pho{
+    color: #042f6a;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.account .account-right .topright .back img{
+    width: 100px;
+    height: 100px;
+}
+.account .account-right .topright .back .call{
+    color: #000;
+    margin-bottom: 10px;
+}
+.account .account-right .topright .back .vi{
+    color: #999;
+    cursor: pointer;
+}
+/* =====================center===================================================== */
+.account .account-right .center{
+    padding:24px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.account .account-right .center ul{
+    display: flex;
+    justify-content: space-around;
+}
+.account .account-right .center ul li span:nth-child(1){
+    display: inline-block;  
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    vertical-align: bottom;
+}
+.account .account-right .center ul li span:nth-child(1) i{
+    display: inline-block;
+    font-size: 24px;
+}
+.account .account-right .center ul li span:nth-child(2){
+    display: inline-block;
+    padding: 7px 0 0 16px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    margin-bottom: 8px;
+}
+.account .account-right .center ul li span:nth-child(2) p:nth-child(1){
+   margin-bottom: 5px;
+}
+.account .account-right .center ul li i{
+   color: #fff;
+}
+.account .account-right .center ul li:nth-child(1) span:nth-child(1){
+    background-color:rgb(250, 193, 38);
+}
+.account .account-right .center ul li:nth-child(2) span:nth-child(1){
+    background-color:rgb(104, 218, 158)
+}
+.account .account-right .center ul li:nth-child(3) span:nth-child(1){
+    background-color: rgb(93, 195, 237);
+}
+.account .account-right .center ul li:nth-child(4) span:nth-child(1){
+    background-color: rgb(253, 115, 122);
+}
+/* =================bottom=========================================== */
+.account .account-right .bottom{
+    background-color: #fff;
+    border-radius: 5px;
+}
+.account .account-right .bottom .title{
+    width: 100%;
+    height: 35px;
+    line-height: 4px;
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    display: flex;
+    margin-bottom: 16px;
+    background: #f5f5f5;
+
+}
+.account .account-right .bottom #showdiv{
+    background-color: #fff;
+    padding-bottom:32px;
+    padding-left: 19px;
+}
+.account .account-right .bottom .title span{
+    width: 50%;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    line-height: 14px;
+    padding: 14px 16px;
+}
+.account .account-right .commons{
+    color: #333;
+    font-size: 14px;
+    margin: 30px 0;
+    font-weight: 400;
+    line-height: 14px;
+}
+.account .account-right .bottom .left .shop{
+    width: 184px;
+    font-size: 14px;
+    color:#fff;
+    background: #122147;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    margin:0 0 32px
+}
+.account .account-right .bottom .right{
+    display: none;
+}
+.account .account-right .bottom .left{
+    display: block;
+    padding-right: 10px;
+}
+/* =======我的订单====== */
+.account .dity{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #f5f5f5;
+}
+.account.dity .dityleft{
+    display: inline-block;
+    width: 442px;
+    height: 161px;
+}
+.account  .dity .dityleft .title1{
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.account  .dity .dityleft .title1 span{
+    width: 218px;
+    padding: 0px !important;
+}
+.account .dity .dityleft .title1 span:nth-child(1){
+    margin-right: 10px;
+}
+.account  .dity .dityleft .img img{
+    width: 80px;
+    height: 107px;
+}
+.account .dity .dityright{
+    font-size: 14px;
+    color: #333;
+    text-align: right;
+    
+}
+.account .account-right .bottom .more{
+    text-align: right;
+    padding-top: 30px;
+    font-size: 14px;
+    color: #333;
+}
+.account .account-right .bottom .dity .dityright div:nth-child(2){
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: 600 !important;
+}
+
+.account .account-right .bottom .dity .dityright div:nth-child(3){
+    display: inline-block;
+    background: pink;
+    color: #fff;
+    border-color: #122147;
+    background: #122147;
+    font-size: 14px;
+    padding: 0 16px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+/* ===============个人信息===.account-right1的盒子================================================== */
+.account .account-right1{
+    display: inline-block;
+    margin-left: 19px;
+    width: 945px;
+    vertical-align: top;
+}
+.account .account-right1>.title{
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-bottom: 16px; 
+}
+.account .account-right1 .top{
+    height: 79px;
+    padding: 24px 16px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.account .account-right1 .top>.title{
+    font-size: 16px;
+    color:#000;
+    font-weight: 700;
+}
+.account .account-right1 .top .phone{
+    margin-top: 15px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.account .account-right1 .top .phone span:nth-child(1){
+    color:#999;
+}
+.account .account-right1 .top .phone span:nth-child(2){
+    color: #333;
+}
+.account .account-right1 .top div:nth-child(3){
+    color: #333;
+    font-size: 14px;
+}
+.account .account-right1  .personal{
+    padding: 24px 16px;
+    background-color: #fff;
+}
+.account .account-right1 .personal .pertitle span:nth-child(1){
+font-size: 16px;
+color: #333;
+font-weight: 700;
+}
+.account .account-right1 .personal .pertitle span:nth-child(2){
+font-size: 14px;
+color: #333;
+}
+/* ===== */
+.account .account-right1 .personal .lable{
+    margin: 21px 0 9px;
+    font-size: 14px;
+}
+.account .account-right1 .personal .lable span:nth-child(1){
+    color: #333;
+}
+.account .account-right1 .personal .lable span:nth-child(2){
+color: #999;
+}
+.account .account-right1 .personal .input1 input{
+    width: 364px;
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 2px;
+    border: 0;
+    outline: none;
+    color: #ccc;
+    border: 1px solid #ccc;
+}
+.account .account-right1 .add{
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    margin-top: 25px;
+    margin-bottom: 32px;
+}
+.account .account-right1 .button span{
+    display: inline-block;
+    width: 124px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    border: 1px solid #122147;
+    color: #122147;
+}
+.commonsapn{
+    background-color: #122147 !important;
+    color: #fff !important;
+}
+.account .account-right1 .button span:nth-child(1){
+    margin-right: 24px;
+}
+.account .account-right1 .radioinput select{
+    display: inline-block;
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 10px;
+    padding-left: 10px;
+    color: #ccc;
+}
+.account .account-right1 .radio{
+    color: #606266;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.account .account-right1 .radio span:nth-child(1){
+    margin-right: 50px;
+}
+.account .account-right1 .radio input{
+    margin-right: 10px;
+}
+/* 地址簿======= */
+.adddata{
+   width: 930px;
+   font-size: 14px;
+   color: #333;
+}
+.adddata .addtitle{
+    height: 44px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+    background-color: #fff;
+    align-items: center;
+    padding-left: 10px;
+}
+.adddata .addtitle span:nth-child(1){
+    width: 15%;
+}
+.adddata .addtitle span:nth-child(2){
+    width: 10%;
+}
+.adddata .addtitle span:nth-child(3){
+    width: 45%;
+}
+.adddata .addtitle span:nth-child(4){
+    width: 15%;
+}
+.adddata .addtitle span:nth-child(5){
+    width: 15%;
+}
+.adddata .data{ 
+    padding-left: 10px;
+    color: #333;
+    background-color: #f5f5f5;
+    height: 44px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.adddata .data span:nth-child(1){
+    width: 15%;
+ }
+.adddata .data span:nth-child(2){
+    width: 10%;
+ }
+.adddata .data span:nth-child(3){
+    width: 45%;
+}
+ 
+.adddata .data span:nth-child(4){
+    width: 15%;
+ }
+.adddata .data span:nth-child(5){ 
+    width: 15%;
+}
+.adddata .data1{
+    background-color: #fff !important;
+}
+
+.adddata .button{
+    width: 220px;
+    margin: 0 auto;
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+    border:1px solid #122147;
+    color:#122147;
+    background-color: #fff;
+    margin-top: 24px;
+} 
+
+.place{
+    width: 945px;
+    padding: 20px 16px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.place_box{
+    width: 496px;
+}
+.box1,.box2{
+    height: 85px;
+    display: inline-block;
+}
+.box2{
+    margin-left: 10px;
+}
+.box_p{
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+    color: #333;
+    margin-bottom: 8px;
+}
+.box_ipnut{
+    width: 214px;
+    height: 34px;
+    padding: 0 12px;
+    border: 1px solid rgb(217,217,217);
+}
+.box_shq{
+    display: flex;
+    margin-bottom: 12px;
+}
+.box_shq>span{
+    display: inline-block;
+    width: 33.3%;
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+}
+.box3_select{
+    display: flex;
+}
+.box3_select>select{
+    width: 154px;
+    height: 36px;
+    padding: 0 20px;
+    margin-left: 16px;
+    color:rgb(217,217,217) ;
+    border: 1px solid rgb(217,217,217);
+}
+.box4{
+    margin: 20px 0 24px;
+}
+.box4>p{
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+    color: #333;
+    margin-bottom: 8px;
+}
+.box4>textarea{
+    width: 464px;
+    height: 47px;
+    padding: 10px 15px;
+    min-height: 47px;
+    border: 1px solid rgb(217,217,217);
+}
+.box4>textarea::-webkit-input-placeholder{
+    color: rgb(217,217,217);
+}
+.box5>input{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.box5>span{
+    font-size: 14px;
+    display: inline-block;
+    height: 19px;
+    line-height: 19px;
+    margin-left: 5px;
+}
+.box5>div{
+    cursor: pointer;
+    margin-top: 40px;
+    width: 240px;
+    height: 36px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 3px;
+    background-color: rgb(18,33,71);
+    color: #fff;
+}
+.box5>div:hover{
+    background-color: rgb(4,47,106);
+}
+/* 我是积分 */
+.account #divlist .account-right3{
+    width: 945px;
+}
+.account #divlist .account-right3 div.jf{
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    line-height: 18px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.account #divlist .account-right3 div.jf span:nth-child(2){
+    font-size: 14px;
+    color: #333;
+}
+.account #divlist .account-right3 .jf1{
+    background: #fff;
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 415px;
+}
+.account #divlist .account-right3 .r3title{
+    padding: 20px 0px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.account #divlist .account-right3 .r3title .titl span:nth-child(1){
+    font-size: 18px;
+    color: #333;
+    margin-right: 16px;
+}
+.account #divlist .account-right3 .r3title .titl span:nth-child(2){
+    font-size: 14px;
+    color: #999;
+}
+.account #divlist .account-right3 .r3title .titr span{
+    width: 98px;
+    height: 14px;
+    display: block;
+    padding: 6px 12px;
+    border: 1px solid #042f6a;
+    border-radius: 14px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #042f6a;
+    line-height: 14px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.account #divlist .account-right3  p{
+    padding: 0 16px;
+    text-align: right;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #999;
+}
+.account #divlist .account-right3 .r3nav{
+    border-bottom: 1px solid #ebebeb;
+    padding: 0 16px;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #999;
+    padding-bottom: 8px;
+}
+.account #divlist .account-right3 .r3nav span{
+    margin-right: 56px;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+/* =====需要动态添加的样式======= */
+.commspan{
+    color: #042f6a;
+    border-bottom: 2px solid #042f6a;
+}
+/* ------- */
+.account #divlist .account-right3 .navdiv{
+    padding: 16px;
+    font-size: 14px;
+    color: #333;
+}
+.account #divlist .account-right3 .navdiv div:nth-child(2){
+    display: none;
+}
+.account #divlist .account-right3 .navdiv div:nth-child(3){
+    display: none;
+}
+.account #divlist .account-right2 .DZB{
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-bottom: 16px;
+}
+/* 我是优惠券 */
+.account #divlist .account-right4{
+    width: 945px;
+}
+.account #divlist .account-right4 .YHQ{
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-bottom: 16px;
+}
+.account #divlist .account-right4 .r4{
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+ 
+}
+.account #divlist .account-right4 .r4 .r4nav{
+     width: 100%;
+     font-weight: 400;
+     height: 44px;
+     display: flex;
+     line-height: 44px;
+     cursor: pointer;
+}
+.account #divlist .account-right4 .r4 .r4nav>span{
+    width: 50%;
+    text-align: left;
+    padding-left: 16px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+} 
+.account #divlist .account-right4 .r4 .r4navdiv .divnav{
+    padding: 16px 16px 0;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+}
+.account #divlist .account-right4 .r4 .r4navdiv .divnav .span11 span:nth-child(1){
+   margin-right: 40px;
+
+}
+.account #divlist .account-right4 .r4 .r4navdiv .divnav .span11{
+    color: #999;
+
+}
+.account #divlist .account-right4 .r4 .r4navdiv .divnav .span11 span{
+    padding-bottom: 8px;
+}
+.account #divlist .account-right4 .r4 .r4navdiv #under:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.account #divlist .account-right4 .r4 .r4navdiv .divcontain{
+    padding-left: 16px;
+    height: 300px;
+}
+/* ---需要动态添加的样式--- */
+.commontitle{
+    background-color: #fff !important;
+}
+/* 我的订单 */
+.account #divlist .account-right5>.title{
+    color: #333;
+    font-size: 14px;
+    margin: 30px 0;
+    font-weight: 400;
+    line-height: 14px;
+}
+.account #divlist .account-right5>.shop{
+    width: 184px;
+    font-size: 14px;
+    color:#fff;
+    background: #122147;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    margin:0 0 32px
+}
+.account #divlist .account-right5 .order{
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-bottom: 16px;
+}
+.account #divlist .account-right5{
+    width: 945px;   
+}
+.account #divlist .account-right5 .r5contain{
+    background-color: #fff;  
+}
+.account #divlist .account-right5 .r5contain .r5nav{
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    background-color: #f5f5f5;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+.account #divlist .account-right5 #r5navdiv{
+    padding: 0 15px 15px;
+    font-size: 10px;
+    color: #333;
+}
+.account #divlist .account-right5 .r5contain .r5nav span{
+    display: inline-block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    width: 20%;
+    cursor: pointer;
+}
+.account #divlist .account-right5 .r5contain #cancel{
+    margin: 20px 0 50px;
+}
+/* ========控制input动态添加的样式===================== */
+.comred{
+    font-size: 12px;
+    color: #ed4040 ;
+}
+.comborder{
+    border: 1px solid #ed4040 !important;
+}
+/* ========如何获得积分的弹出======================= */
+.layerbg{
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    z-index: 19999999;
+    display: none;
+    overflow:scroll;
+}
+.layerbg .layer{
+    width: 737px;
+    height: 656px;
+    position: absolute;
+    z-index: 2222222;
+    left: 50%;
+    margin-left: -387px;
+    margin-top: 95px;
+    background: #fff;
+    border-radius: 4px;
+    padding: 32px;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 14px;
+    display: none;
+}
+
+.layerbg .layer .titlebg{
+    font-size: 18px;
+    font-weight: 500;
+    color: #2e2e2e;
+    line-height: 20px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.layerbg .layer img:nth-child(2){
+    width: 349px;
+    height: 469px;
+    margin: 14px 187px 0;
+}
+.layerbg .layer span{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+/* 修改密码的弹出窗口 */
+.layerbg .layer1{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left: -155px;
+    margin-top: -190px;
+    z-index: 2222222;
+    width: 311px;
+    height: 360px;
+    background: #fff;
+    border-radius: 4px;
+    padding: 32px;
+    text-align: left;
+    font-size: 14px;
+    display: none;
+}
+.layerbg .layer1 .laytitle{
+    font-size: 18px;
+    color: #2e2e2e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.layerbg .layer1 ul{
+    font-size: 14px;
+    color: #333;
+}
+.layerbg .layer1 ul li{
+    height: 76px;
+    margin-bottom: 18px;
+}
+.layerbg .layer1 ul li p{
+    margin-bottom: 10px;
+}
+.layerbg .layer1 ul li input{
+    width: 300px;
+    height: 32px;
+    padding-left: 12px;
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.layerbg .layer1 .submit{
+    width: 311px;
+    height: 36px;
+    color: #fff;
+    background-color: #122147;
+    text-align: center;
+    line-height: 36px;
+}
+.layerbg .layer1 span{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+/* 新增地址的弹出框 */
+.layerbg .layer2{
+    width: 540px;
+    height: 500px;
+    position: absolute;
+    margin: auto;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background-color: #fff;
+    border-radius: 5px;
+    display:none;
+    padding:15px 20px 20px;
+    z-index: 11111
+}
+.layerbg .layer2 .place h4{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.layerbg .layer2 .place{
+    padding: 20px 16px;
+    border-radius: 3px;
+    background-color: #fff;
+    display: contents;
+}
+.box1,.box2{
+    height: 85px;
+    display: inline-block;
+}
+.box2{
+    margin-left: 10px;
+}
+.box_p{
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+    color: #333;
+    margin-bottom: 8px;
+}
+.box_ipnut{
+    width: 214px;
+    height: 34px;
+    padding: 0 12px;
+    border: 1px solid rgb(217,217,217);
+}
+.box_shq{
+    display: flex;
+    margin-bottom: 12px;
+}
+.box_shq>span{
+    display: inline-block;
+    width: 33.3%;
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+}
+.box3_select{
+    display: flex;
+}
+.box3_select>select{
+    width: 154px;
+    height: 36px;
+    padding: 0 20px;
+    margin-left: 16px;
+    color:#333 ;
+    border: 1px solid rgb(217,217,217);
+}
+.layerbg .layer2 .box4{
+    margin: 20px 0 24px;
+}
+.layerbg .layer2 .box4>p{
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+    color: #333;
+    margin-bottom: 8px;
+}
+.layerbg .layer2 .box4>textarea{
+    width: 464px;
+    height: 47px;
+    padding: 10px 15px;
+    min-height: 47px;
+    border: 1px solid rgb(217,217,217);
+}
+.layerbg .layer2 .box4>textarea::-webkit-input-placeholder{
+    color: rgb(217,217,217);
+}
+.box5{
+
+}
+.layerbg .layer2 .box51>input{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.layerbg .layer2 .box51>div{
+    cursor: pointer;
+    margin-top: 40px;
+    /* width: 240px; */
+    width: 100%;
+    height: 36px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 3px;
+    color: #fff;
+    display: flex;
+}
+.layerbg .layer2 .box51>div>span{
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 40px;
+    width: 50%;
+    height: 36px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 3px;
+    background-color: #fff;
+    color:rgb(18,33,71);
+    border: 1px solid rgb(18,33,71);
+}
+.layerbg .layer2 .box51>div>span:nth-child(1){
+    margin-right: 10px;
+}
+.commonsapn{
+    background-color: rgb(18,33,71) !important;
+    color: #fff !important;
+}
+.pred{
+    color: #ed4040 !important;
+    font-size: 14px;
+    display: none;
+}
+.qX{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+
+
+
+
+
+
+
+/* 我的退换货 */
+.account #divlist .account-right6{
+    width: 945px;
+}
+.account #divlist .account-right6 .title{
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-bottom: 16px; 
+}
+.account #divlist .account-right6  .DD{
+    width: 100%;
+    height: 40px;
+    line-height: 4px;
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    display: flex;
+    /* margin-bottom: 15px; */
+    background: #f5f5f5;
+}
+.account #divlist .account-right6 .DD span{
+    width: 50%;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    line-height: 14px;
+    padding: 14px 16px;
+}
+.account #divlist .account-right6 .DDdiv{
+    padding-top:15px;
+    background-color: #fff;
+    height: 360px;  
+    padding-left: 16px;
+    font-size: 14px;
+    color: #333;
+}
+.account #divlist .account-right6 .DDdiv .usebox{
+    padding-bottom: 5px;
+}
+.account #divlist .account-right6 .DDdiv .usebox span:nth-child(1){
+    margin-right: 50px;
+}
+.account #divlist .account-right6 .DDdiv .usebox span{
+    padding:20px 0 3px;
+    cursor: pointer;
+}
+.account #divlist .account-right6 .DDdiv .usediv{
+    padding-top: 16px;
+}
+/* ==============================commonStyle================================= */
+.account  .commonBG{
+    background: #fff !important;
+    color: #000 !important;
+    font-weight: 700;
+}
+/* 需要动态添加的样式 */
+.common{
+    background-color: #f5f5f5;
+    border-left: 3px solid blue;
+   }
+   .account .tobaby{
+       display: none;
+       margin-bottom: 30px;
+   }

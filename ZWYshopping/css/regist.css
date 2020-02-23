@@ -1,0 +1,266 @@
+.regist .log_nav .active{
+    color:#333;
+    border-bottom: 2px solid #333;
+}
+.regist .log_nav #active_l:hover{
+    cursor: pointer;
+}
+.regist .log_nav #active_r:hover{
+    cursor: pointer;
+}
+/* jq所需控制的边框 */
+.inpt1{
+    border:1px solid rgb(237, 64, 64)!important;
+}
+/* jq所需控制的是否显示警告文字 */
+.ip_red{
+    font-size: 12px;
+    color:#ed4040;
+    padding-top:5px;
+    display: none;
+}
+.regist{
+    margin-bottom: 72px;
+}
+.regist .w .login{
+    margin: auto;
+    width: 400px;
+}
+.regist .log_nav{
+    padding-top: 20px;
+    display: flex;
+    margin-bottom: 13px;
+}
+.regist .log_nav span{
+    display: inline-block;
+    color: #ccc;
+    text-align: center;
+    height: 18px;
+    width: 198px;
+    border-bottom: 2px solid #ccc;
+    padding: 16px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+/* =================left================= */
+.regist .login_mainleft{
+    padding:20px 0;
+}
+.regist .login_mainleft .label{
+    margin-top:25px
+}
+.regist .login_mainleft .label input{
+    font-size: 14px;
+    color: #333;
+    height: 36px;
+    border:1px solid #ccc;
+    border-radius: 3px;
+    margin-top:10px;
+    width: 250px;
+    padding-left: 5px;
+    outline: none;
+}
+.regist .login_mainleft .label img{
+    width: 95px;
+    vertical-align: middle;
+}
+.regist .login_mainleft .label .com_btn{
+    width: 130px;
+    height: 36px;
+    line-height: 36px;
+    float: right;
+    margin-top: 10px;
+}
+/* ====================right========================= */
+.regist .login_mainright{
+    margin-top:10px;
+}
+.regist .login_mainright .label{
+    margin-bottom: 10px;
+}
+.regist .login_mainright .label input.inpt{
+    display: inline-block;
+    width: 374px;
+    height: 34px;
+    padding: 0 12px;
+    color: #d9d9d9;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+}
+.regist .login_mainright input{
+    outline: none;
+    color: #333 !important;
+}
+.regist .login_mainright .label .lab_div{
+    padding:10px 0;
+}
+.regist .login_mainright .label_span{
+    margin:22px 0 10px;
+}
+.regist .login_mainright .check{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+  background-color: #fff;
+    vertical-align: bottom;
+}
+.regist .login_main .login_pro{
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+}
+/* --------------最下面的登录部分bottom------------ */
+.regist .login_bottom .com_bg{
+    width: 400px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background-color: #0d2347;
+    border-radius: 3px;
+    margin: 35px 0 30px 0
+}
+.regist .login_bottom .wechat div{
+    color: #333;
+    font-size: 14px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+.regist .login_bottom .wechat i{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+}
+.regist .login_bottom .wechat i.icon-icon{
+    background-color: rgb(0, 183, 0);
+    margin-right: 16px;
+}
+.regist .login_bottom .wechat i.icon-qq{
+    background-color: rgb(73, 138, 213);
+}
+/* ======================重置密码验证手机弹出框的样式========= */
+.layerbg{
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    display:none;  
+    z-index: 999999;
+}
+.layerbg .layer{
+    width: 346px;
+    height: 385px;
+    position: absolute;
+    margin: auto;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 32px;
+    display: none;
+}
+.layerbg .layer1{
+    width: 346px;
+    height: 385px;
+    position: absolute;
+    margin: auto;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 32px;
+    display: none;
+}
+.layerbg  .titlep{
+    text-align: center;
+    font-size: 18px;
+    color: #2e2e2e;
+    height: 20px;
+    margin-bottom: 20px;;
+}
+.layerbg .layer #close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+.layerbg .layer1 #close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+.layerbg .layer .label{
+    margin: 0 0 24px;
+    height: 76px;
+}
+.layerbg .layer1 .label{
+    margin: 0 0 24px;
+    height: 76px;
+}
+.layerbg .layer .label .title{
+    margin-bottom: 10px;
+}
+.layerbg .layer1 .label .title{
+    margin-bottom: 10px;
+}
+.layerbg .layer .label input{
+    display: block;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    height: 32px;
+    padding: 0 12px;
+    display: inline-block;
+}
+.layerbg .layer1 .label input{
+    display: block;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    height: 32px;
+    padding: 0 12px;
+    display: inline-block;
+}
+.layerbg .layer .label img{
+    width: 96px;
+    height: 34px;
+    vertical-align: bottom;
+}
+.layerbg .layer .label .com_btn{
+    width: 120px;
+    height: 34px;
+    line-height: 34px;
+    float: right;
+    margin-left: 12px
+}
+#nextBtn{
+    width: 330px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius:3px;
+    margin: 44px 0 20px 0;
+}
+#nextOver{
+    width: 330px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius:3px;
+    margin: 44px 0 20px 0;
+}

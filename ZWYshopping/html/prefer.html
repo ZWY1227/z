@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="https://gap-cn-node.oss-cn-shanghai.aliyuncs.com/casaba_plus_assets/prod-2020.2.3-1/static/gap-144.f33f599c3d52f4169adf21ba71bf5cc8.png">
+    <title>GAP优惠券使用规则</title>
+    <script src="../js/jquery-1.11.3.js"></script>
+</head>
+<body>
+       <!-- 头 -->
+       <div id="header"></div>
+       <!-- 积分页面 -->
+       <div class="JF" style="margin-top: 197px;">
+        <div class="w"  style="background-color: pink;height: 500px;font-size: 32px;">
+                优惠规则页面，等会儿补充
+                <span onclick="MYccountfun()" style="cursor: pointer;float: right;color: blue;;">
+                    点击返回个人中心</span>
+        </div>
+       </div>
+          <!-- 脚 -->
+    <div id="footer"></div>
+    
+</body>
+</html>
+<script>
+    $("#header").load("../common/personheader.html")
+    $("#footer").load("../common/footer.html")
+    function MYccountfun(){
+        window.location.href="./MYccount.html"
+    }
+</script>
